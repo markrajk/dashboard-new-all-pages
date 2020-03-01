@@ -487,11 +487,9 @@ main {
       grid-gap: 1.6rem;
       grid-template-areas: "card1 card2" "card4 card4";
       grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .section-manage-other-teams {
-      grid-gap: 1.6rem;
-      grid-template-areas: "card1" "card4";
-      grid-template-columns: 1fr; } }
+      grid-gap: 1.6rem; } }
   .section-manage-other-teams-add-new {
     padding-bottom: 3rem;
     margin-top: 12rem;
@@ -514,10 +512,6 @@ main {
     max-height: 34rem;
     border-radius: 5px;
     border: solid 1.5px #eaebee; }
-    @media (max-width: 767px) {
-      .section-manage-other-teams .graph-card {
-        min-width: 60rem;
-        margin: 0 auto; } }
     .section-manage-other-teams .graph-card svg {
       position: absolute;
       right: 0;
@@ -551,10 +545,10 @@ main {
         font-size: 2.2rem;
         color: #1a173b; }
       .section-manage-other-teams .graph-card-header .options {
-        margin-top: 0.65rem;
+        margin-top: 0.5rem;
         margin-left: 0.2rem;
         margin-right: auto;
-        font-size: 1.35rem;
+        font-size: 1.3rem;
         font-weight: normal; }
         .section-manage-other-teams .graph-card-header .options a {
           color: #878590; }
@@ -579,11 +573,8 @@ main {
         border-radius: 8px;
         background-color: rgba(193, 192, 200, 0.24); }
         @media (max-width: 1400px) {
-          .section-manage-other-teams .graph-card-body .bar:first-child, .section-manage-other-teams .graph-card-body .bar:first-child + .bar {
+          .section-manage-other-teams .graph-card-body .bar:first-child {
             display: none !important; } }
-        @media (max-width: 767px) {
-          .section-manage-other-teams .graph-card-body .bar:first-child, .section-manage-other-teams .graph-card-body .bar:first-child + .bar {
-            display: inline-block !important; } }
         .section-manage-other-teams .graph-card-body .bar-fill {
           position: absolute;
           bottom: 0;
@@ -915,7 +906,7 @@ main {
           white-space: nowrap;
           left: 50%;
           bottom: -5.5%;
-          font-size: 1.25rem;
+          font-size: 1.15rem;
           color: #6f6e77;
           transform: translate(-50%, 100%); }
   .section-top .bottom {
@@ -946,10 +937,10 @@ main {
         color: #000000; }
       .section-top .bottom-header .custom-dd-link {
         font-family: "Lato", sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: #0077ff; }
         .section-top .bottom-header .custom-dd-link i {
-          font-size: 2.2rem; }
+          font-size: 2rem; }
     .section-top .bottom select {
       font-family: inherit;
       border: none;
@@ -979,12 +970,10 @@ main {
         justify-content: space-between;
         padding: 1.5rem 2rem;
         font-size: 1.5rem;
+        color: #2c2f34;
         border-bottom: solid 1px #f5f5f5; }
         .section-top .bottom-body .list-group-item p {
-          width: 80%;
-          color: #707070; }
-        .section-top .bottom-body .list-group-item span {
-          color: #2C2F34; }
+          width: 80%; }
 
 .section-give-feedback {
   padding-bottom: 3rem; }
@@ -1321,7 +1310,7 @@ main {
         .section-team-settings .side-menu ul li a {
           text-decoration: none;
           font-family: "Heebo-Medium";
-          font-size: 1.35rem;
+          font-size: 1.3rem;
           color: #333333; }
   .section-team-settings-main {
     width: 100%;
@@ -1432,7 +1421,7 @@ main {
         .section-team-settings-member .side-menu ul li a {
           text-decoration: none;
           font-family: "Heebo-Medium";
-          font-size: 1.35rem;
+          font-size: 1.3rem;
           color: #333333; }
   .section-team-settings-member-main {
     width: 100%;
@@ -1467,10 +1456,10 @@ main {
         .section-team-settings-member-main-header h2 span {
           font-weight: 600; }
         .section-team-settings-member-main-header h2 svg {
-          margin-left: 1rem;
+          margin-left: 2rem;
           margin-top: -.2rem;
-          width: 2.3rem;
-          height: 2.3rem;
+          width: 2.1rem;
+          height: 2.1rem;
           cursor: pointer; }
           .section-team-settings-member-main-header h2 svg .cls-1 {
             fill: #1477fc; }
@@ -1995,3 +1984,5 @@ main {
   color: #fff;
   border-radius: 0.4rem;
   text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
