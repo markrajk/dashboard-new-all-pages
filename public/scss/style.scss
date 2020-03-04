@@ -1114,10 +1114,41 @@ main {
   grid-gap: 3.2rem;
   grid-template-areas:
     "card1 card2"
-    "card3 card4";
+    "card3 card2";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 34rem 51.7rem;
+  grid-template-rows: 34rem 28rem;
   min-width: 100rem !important;
+
+  & .card1 {
+    grid-area: card1;
+    font-family: "Heebo-Regular";
+    color: #88888C;
+
+    & .options {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      & .active {
+        font-family: "Heebo-Medium";
+        color: #626269
+      }
+
+      & .divider {
+        margin: 0 .2rem!important;
+        font-family: "Heebo-Medium";
+        color: #626269
+      }
+    }
+  }
+
+  & .card2 {
+    grid-area: card2;
+  }
+
+  & .card3 {
+    grid-area: card3;
+  }
 
   @include respond(desktop-xxl) {
     grid-gap: 2.9rem;
@@ -1139,12 +1170,12 @@ main {
     height: 34rem;
     width: 100%;
     padding-bottom: 2rem;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5;
+    border-radius: 8px;
+    border: solid 1px #f5f5f5;
   
     &-header {
       padding: 2rem;
-      padding-bottom: 1.6rem;
+      padding-bottom: 3rem;
   
       & h3 {
         margin: 0;
@@ -1172,7 +1203,7 @@ main {
       min-height: calc(100% - 8.9rem);
       padding-left: 4.4rem;
       padding-right: 4.4rem;
-      padding-bottom: 3rem;
+      padding-bottom: 5.5rem;
   
       & .bar {
         position: relative;
@@ -1211,7 +1242,7 @@ main {
           position: absolute;
           white-space: nowrap;
           left: 50%;
-          bottom: -5.5%;
+          bottom: -6%;
           font-size: 1.25rem;
           color: #6f6e77;
           transform: translate(-50%, 100%);
@@ -1235,30 +1266,49 @@ main {
       background-color: #fff;
       padding: 2rem;
       padding-bottom: 2rem;
+      padding-right: 1.8rem;
       //border-radius: 13px;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       //border: 1.5px solid #eaebee;
-      border-top-left-radius:  13px;
-      border-top-right-radius:  13px;
+      border-top-left-radius:  8px;
+      border-top-right-radius:  8px;
       border-bottom: none;
+
+      & .options {
+        margin-left: 0;
+        margin-top: -.2rem;
+        white-space: nowrap;
+        //margin-bottom: 1rem;
+        font-size: 2.4rem;
+        font-family: "Heebo-Regular";
+        
+        & a {
+          color: #000000;
+        }
+        & .active {
+          font-family: "Heebo-Bold";
+          color: #000000
+        }
+  
+        & .divider {
+          margin: 0 .2rem!important;
+          font-family: "Heebo-Bold";
+          color: #000000
+        }
+      }
   
       & h4 {
         margin: 0;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
         font-family: "Heebo-Medium";
         font-size: 1.2rem;
         letter-spacing: 0.24px;
         color: #88888c;
       }
   
-      & h3 {
-        margin: 0;
-        font-family: "Heebo-Bold";
-        font-size: 2.4rem;
-        color: #000000;
-      }
-  
       & .custom-dd-link {
+        margin-top: -.2rem;
+        white-space: nowrap;
         font-family: "Lato", sans-serif;
         font-size: 1.4rem;
         color: #0077ff;
@@ -1281,13 +1331,13 @@ main {
     &-body {
       height: 100%;
       //height: 200px;
-      max-height: calc(100% - 9.15rem);
+      max-height: calc(100% - 10.01rem);
   
       & .list-group-flush {
         height: 100%;
-        border: solid 1.5px #f5f5f5;
-        border-bottom-left-radius: 13px;
-        border-bottom-right-radius: 13px;
+        border: solid 1px #f5f5f5;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
         overflow-y: scroll;
         overflow-x: hidden;
         -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -1307,18 +1357,105 @@ main {
         display: flex;
         justify-content: space-between;
         padding: 1.5rem 2rem;
-        font-size: 1.5rem;
+        font-size: 1.45rem;
+        
   
         border-bottom: solid 1px #f5f5f5;
   
         & p {
+          line-height: 2rem;
+          font-size: 1.45rem;
           width: 80%;
-          color: #707070;
+          color: #2C2F34;
         }
 
         & span {
+          font-size: 1.36rem;
           color: #2C2F34;
         }
+      }
+    }
+  }
+
+  & .average-feedback {
+    padding: 2rem;
+    padding-bottom: 3.5rem;
+    background-color: #FFF;
+    
+    &-header {
+      font-family: "Heebo-Regular";
+      color: #88888C;
+  
+      & .options {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        & .active {
+          font-family: "Heebo-Medium";
+          color: #626269
+        }
+  
+        & .divider {
+          margin: 0 .2rem!important;
+          font-family: "Heebo-Medium";
+          color: #626269
+        }
+      }
+
+      & h3 {
+        margin: 0;
+        margin-top: -0.1rem;
+        white-space: nowrap;
+        font-family: "Heebo-Bold";
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        color: #000;
+      }
+
+      &-btn {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.8rem;
+        width: 13.7rem;
+        padding: 0 1.2rem;
+        background-color: #0077FF;
+        border: none;
+        border-radius: 14px;
+        color: #FFF;
+        text-decoration: none;
+
+        & span {
+          margin-top: .06rem;
+          font-family: "Heebo-Bold";
+          line-height: 1;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    &-body {
+      position: relative;
+      & img {
+        width: 26rem;
+        height: 22.5rem;
+      }
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        width: 16rem;
+        height: 16rem;
+        transform: translate(-50%, -50%);
+        background-color: #FFF;
+        border-radius: 50%;
       }
     }
   }
