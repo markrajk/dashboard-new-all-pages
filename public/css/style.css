@@ -937,7 +937,7 @@ main {
         background-color: #FFF;
         border-radius: 50%; }
         .section-top .average-feedback-body-text .top {
-          margin-top: -1rem;
+          margin-top: -.5rem;
           font-family: "Heebo-Medium";
           font-size: 1.4rem;
           color: #000;
