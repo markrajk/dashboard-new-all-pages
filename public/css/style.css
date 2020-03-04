@@ -58,6 +58,18 @@ header {
       margin-left: 0.1rem;
       font-size: 1.4rem;
       letter-spacing: .25px; }
+      header .navbar-left a {
+        text-decoration: none; }
+      header .navbar-left.active {
+        position: relative; }
+        header .navbar-left.active::after {
+          content: "";
+          position: absolute;
+          bottom: .5rem;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #fd2851; }
     header .navbar-center {
       font-size: 2.2rem; }
       header .navbar-center img {
