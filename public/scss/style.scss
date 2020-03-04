@@ -517,39 +517,6 @@ main {
           fill: none;
         }
       }
-  
-      // & .add-btn {
-      //   align-self: center;
-      //   display: inline-block;
-      //   position: relative;
-      //   width: 33px;
-      //   height: 33px;
-      //   border: 2px solid #0087ff;
-      //   border-radius: 50%;
-      //   cursor: pointer;
-  
-      //   &::before {
-      //     content: "";
-      //     position: absolute;
-      //     width: 14px;
-      //     height: 2px;
-      //     background-color: #0087ff;
-      //     top: 50%;
-      //     left: 50%;
-      //     transform: translate(-50%, -50%);
-      //   }
-  
-      //   &::after {
-      //     content: "";
-      //     position: absolute;
-      //     width: 2px;
-      //     height: 14px;
-      //     background-color: #0087ff;
-      //     top: 50%;
-      //     left: 50%;
-      //     transform: translate(-50%, -50%);
-      //   }
-      // }
     }
   
     & .list-group-flush {
@@ -624,6 +591,7 @@ main {
         color: #fff;
         font-weight: 700;
         border-radius: 3px;
+        letter-spacing: .5px;
   
         &-green {
           background: $green-gradient;
