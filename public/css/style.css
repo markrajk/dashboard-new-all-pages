@@ -53,6 +53,7 @@ header {
     header .navbar a, header .navbar span {
       color: #000 !important; }
     header .navbar-left {
+      font-family: "Heebo-Medium";
       margin-top: .05rem;
       text-decoration: none;
       margin-left: 0.1rem;
@@ -914,7 +915,7 @@ main {
         text-decoration: none; }
         .section-top .average-feedback-header-btn span {
           margin-top: .06rem;
-          font-family: "Heebo-Bold";
+          font-family: "Heebo-Medium";
           line-height: 1;
           font-size: 1.3rem; }
     .section-top .average-feedback-body {
@@ -935,9 +936,26 @@ main {
         transform: translate(-50%, -50%);
         background-color: #FFF;
         border-radius: 50%; }
+        .section-top .average-feedback-body-text .top {
+          margin-top: -1rem;
+          font-family: "Heebo-Medium";
+          font-size: 1.4rem;
+          color: #000;
+          letter-spacing: .25px; }
+        .section-top .average-feedback-body-text .middle {
+          font-family: "Heebo-Bold";
+          font-size: 3.3rem;
+          color: #000;
+          letter-spacing: .25px; }
+        .section-top .average-feedback-body-text .bottom {
+          margin-top: 1rem;
+          font-family: "Heebo-Medium";
+          font-size: 1rem;
+          color: #000;
+          letter-spacing: .5px; }
 
 .section-give-feedback {
-  padding-bottom: 3rem; }
+  padding-bottom: 1.5rem; }
   .section-give-feedback-header {
     padding-top: 1.85rem;
     padding-bottom: 1.95rem;
@@ -1034,7 +1052,7 @@ main {
             font-size: 1.25rem;
             font-weight: 500;
             color: #000;
-            border: solid 1.5px rgba(0, 0, 0, 0.1);
+            border: solid 1px rgba(0, 0, 0, 0.1);
             border-radius: 1.7rem;
             outline: none; }
             .section-give-feedback-main .people .card-header .search input::placeholder {
@@ -1123,7 +1141,8 @@ main {
           background-color: #f4faff; }
         .section-give-feedback-main .people .list-group-item img {
           width: 2.7rem;
-          height: 2.7rem; }
+          height: 2.7rem;
+          box-shadow: 0 0 0 .35px #d5d5d5; }
         .section-give-feedback-main .people .list-group-item .name {
           font-family: "Open Sans", sans-serif;
           padding-left: 1.8rem;
@@ -1147,7 +1166,7 @@ main {
           height: 2.7rem;
           font-size: 1.22rem;
           color: #1477fc;
-          text-transform: uppercase;
+          text-transform: capitalize;
           border: solid 1.3px #1477fc;
           border-radius: 13px; }
           .section-give-feedback-main .people .list-group-item .btn-custom span {
