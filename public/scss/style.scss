@@ -131,14 +131,7 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
     url("../fonts/Hank\ Rnd/WOFF/HankRnd-Black.woff") format("woff"),
     url("../fonts/Hank\ Rnd/TTF/HankRnd-Black.ttf") format("truetype");
 }
-@font-face {
-  font-family: "Heebo-Thin";
-  src: url("../fonts/Heebo/Heebo-Thin.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Heebo-Light";
-  src: url("../fonts/Heebo/Heebo-Light.ttf") format("truetype");
-}
+
 @font-face {
   font-family: "Heebo-Regular";
   src: url("../fonts/Heebo/Heebo-Regular.ttf") format("truetype");
@@ -152,16 +145,6 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
 @font-face {
   font-family: "Heebo-Bold";
   src: url("../fonts/Heebo/Heebo-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Heebo-ExtraBold";
-  src: url("../fonts/Heebo/Heebo-ExtraBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Heebo-Black";
-  src: url("../fonts/Heebo/Heebo-Black.ttf") format("truetype");
 }
 
 html {
@@ -202,6 +185,7 @@ header {
     }
 
     &-left {
+      margin-top: .05rem;
       text-decoration: none;
       margin-left: 0.1rem;
       font-size: 1.345rem;
@@ -221,6 +205,7 @@ header {
     }
 
     &-right {
+      margin-top: .05rem;
       font-size: 1.325rem;
     }
   }
@@ -591,7 +576,7 @@ main {
         color: #fff;
         font-weight: 700;
         border-radius: 3px;
-        letter-spacing: .5px;
+        letter-spacing: .25px;
   
         &-green {
           background: $green-gradient;
@@ -925,7 +910,7 @@ main {
 
       & .btn-custom-blue,
       & .btn-custom-blue:hover {
-        margin-top: -.175rem;
+        margin-top: -.225rem;
         font-family: "Lato", sans-serif;
         font-weight: bold;
         border-radius: 3px;
