@@ -630,23 +630,12 @@ main {
           position: absolute;
           white-space: nowrap;
           left: 50%;
-          bottom: -7%;
-          font-size: 1rem;
-          letter-spacing: 0.24px;
-          font-weight: 700;
-          color: rgba(23, 23, 23, 0.6);
+          bottom: -5.5%;
+          font-size: 1.15rem;
+          color: #6f6e77;
           transform: translate(-50%, 100%); }
-          @media (max-width: 1199px) {
-            .section-manage-other-teams .graph-card-body .bar-info {
-              font-size: 1rem; } }
-          @media (max-width: 991px) {
-            .section-manage-other-teams .graph-card-body .bar-info {
-              font-size: 1rem; } }
-          @media (max-width: 767px) {
-            .section-manage-other-teams .graph-card-body .bar-info {
-              font-size: 1.2rem; } }
           .section-manage-other-teams .graph-card-body .bar-info span {
-            font-size: 1.05rem; }
+            font-size: 1.2rem; }
   .section-manage-other-teams .people {
     font-family: "Lato";
     grid-area: card4;

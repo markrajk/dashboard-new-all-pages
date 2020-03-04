@@ -1048,26 +1048,13 @@ main {
           position: absolute;
           white-space: nowrap;
           left: 50%;
-          bottom: -7%;
-          font-size: 1rem;
-          letter-spacing: 0.24px;
-          font-weight: 700;
-          color: rgba($color: #171717, $alpha: 0.6);
+          bottom: -5.5%;
+          font-size: 1.15rem;
+          color: #6f6e77;
           transform: translate(-50%, 100%);
-          @include respond(desktop-lg) {
-            font-size: 1rem;
-          }
-
-          @include respond(desktop-md) {
-            font-size: 1rem;
-          }
-
-          @include respond(desktop-sm) {
-            font-size: 1.2rem;
-          }
 
           & span {
-            font-size: 1.05rem;
+            font-size: 1.2rem;
           }
         }
       }
