@@ -856,8 +856,8 @@ main {
     min-height: 34rem;
     height: 100%;
     max-height: 34rem;
-    border-radius: 5px;
-    border: solid 1.5px #eaebee;
+    border-radius: 8px;
+    border: solid 1px #f5f5f5;
 
     @include respond(desktop-sm) {
       min-width: 60rem;
