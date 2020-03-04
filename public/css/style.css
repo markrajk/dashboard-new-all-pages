@@ -943,12 +943,13 @@ main {
           color: #000;
           letter-spacing: .25px; }
         .section-top .average-feedback-body-text .middle {
+          margin-top: .3rem;
           font-family: "Heebo-Bold";
           font-size: 3.3rem;
           color: #000;
           letter-spacing: .25px; }
         .section-top .average-feedback-body-text .bottom {
-          margin-top: 1rem;
+          margin-top: 1.3rem;
           font-family: "Heebo-Medium";
           font-size: 1rem;
           color: #000;
