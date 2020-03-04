@@ -273,33 +273,20 @@ main {
         font-size: 1.16rem;
         color: #88888c;
         letter-spacing: 0.24px; }
-      .section-my-team .people .card-header .add-btn {
-        align-self: center;
-        display: inline-block;
-        position: relative;
-        width: 33px;
-        height: 33px;
-        border: 2px solid #0087ff;
-        border-radius: 50%;
-        cursor: pointer; }
-        .section-my-team .people .card-header .add-btn::before {
-          content: "";
-          position: absolute;
-          width: 14px;
-          height: 2px;
-          background-color: #0087ff;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
-        .section-my-team .people .card-header .add-btn::after {
-          content: "";
-          position: absolute;
-          width: 2px;
-          height: 14px;
-          background-color: #0087ff;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
+      .section-my-team .people .card-header svg {
+        width: 3.2775rem;
+        height: 3.311rem; }
+        .section-my-team .people .card-header svg .cls-1 {
+          fill: #fff;
+          stroke: #1477fc;
+          stroke-miterlimit: 10;
+          stroke-width: .175rem; }
+        .section-my-team .people .card-header svg .cls-2 {
+          fill: #1477fc; }
+        .section-my-team .people .card-header svg .cls-3 {
+          stroke: none; }
+        .section-my-team .people .card-header svg .cls-4 {
+          fill: none; }
     .section-my-team .people .list-group-flush {
       max-height: calc(100% - 12.1rem);
       overflow-y: scroll;
@@ -539,10 +526,11 @@ main {
       height: 6rem;
       border-top: 1.5px solid #eaebee; }
       .section-manage-other-teams .graph-card-footer .btn-custom-blue, .section-manage-other-teams .graph-card-footer .btn-custom-blue:hover {
+        margin-top: -.175rem;
         font-family: "Lato", sans-serif;
         font-weight: bold;
         border-radius: 3px;
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         padding: 0.7rem 2.8rem; }
     .section-manage-other-teams .graph-card-header {
       padding: 1.7rem;
@@ -555,7 +543,7 @@ main {
         margin-top: 0.65rem;
         margin-left: 0.2rem;
         margin-right: auto;
-        font-size: 1.35rem;
+        font-size: 1.4rem;
         font-weight: normal; }
         .section-manage-other-teams .graph-card-header .options a {
           color: #878590; }
@@ -616,6 +604,8 @@ main {
           @media (max-width: 767px) {
             .section-manage-other-teams .graph-card-body .bar-info {
               font-size: 1.2rem; } }
+          .section-manage-other-teams .graph-card-body .bar-info span {
+            font-size: 1.05rem; }
   .section-manage-other-teams .people {
     font-family: "Lato";
     grid-area: card4;
