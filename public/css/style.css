@@ -258,6 +258,7 @@ main {
     border: none; }
     .section-my-team .people .card-header {
       padding: 2rem 2.6rem;
+      padding-left: 2rem;
       border: solid 1px #f5f5f5;
       border-bottom: solid 1.3px #f5f5f5;
       border-top-left-radius: 8px;
@@ -312,6 +313,7 @@ main {
     .section-my-team .people .list-group-item {
       position: relative;
       padding: 0.9rem 2.6rem;
+      padding-left: 2rem;
       font-size: 1.3rem;
       color: #354052;
       border: none; }
@@ -876,7 +878,9 @@ main {
   .section-top .average-feedback {
     padding: 2rem;
     padding-bottom: 3.5rem;
-    background-color: #FFF; }
+    background-color: #FFF;
+    border-radius: 8px;
+    border: solid 1px #f5f5f5; }
     .section-top .average-feedback-header {
       font-family: "Heebo-Regular";
       color: #88888C; }
@@ -937,19 +941,19 @@ main {
         background-color: #FFF;
         border-radius: 50%; }
         .section-top .average-feedback-body-text .top {
-          margin-top: -.5rem;
+          margin-top: 1rem;
           font-family: "Heebo-Medium";
           font-size: 1.4rem;
           color: #000;
           letter-spacing: .25px; }
         .section-top .average-feedback-body-text .middle {
-          margin-top: .3rem;
-          font-family: "Heebo-Bold";
+          margin-top: -.3rem;
+          font-family: "HankRnd-Bold";
           font-size: 3.3rem;
           color: #000;
           letter-spacing: .25px; }
         .section-top .average-feedback-body-text .bottom {
-          margin-top: 1.3rem;
+          margin-top: 2rem;
           font-family: "Heebo-Medium";
           font-size: 1rem;
           color: #000;
@@ -1701,6 +1705,7 @@ main {
     border: none; }
     .section-example-team .people .card-header {
       padding: 2rem 2.6rem;
+      padding-left: 2rem;
       border: solid 1px #f5f5f5;
       border-bottom: solid 1.3px #f5f5f5;
       border-top-left-radius: 8px;
@@ -1755,6 +1760,7 @@ main {
     .section-example-team .people .list-group-item {
       position: relative;
       padding: 0.9rem 2.6rem;
+      padding-left: 2rem;
       font-size: 1.3rem;
       color: #354052;
       border: none; }
