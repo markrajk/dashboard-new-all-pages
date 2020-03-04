@@ -56,7 +56,7 @@ header {
       margin-top: .05rem;
       text-decoration: none;
       margin-left: 0.1rem;
-      font-size: 1.345rem;
+      font-size: 1.365rem;
       letter-spacing: .25px; }
     header .navbar-center {
       font-size: 2.2rem; }
@@ -69,7 +69,7 @@ header {
         box-shadow: 0 0 0 .35px #d5d5d5; }
     header .navbar-right {
       margin-top: .05rem;
-      font-size: 1.325rem; }
+      font-size: 1.345rem; }
   header .header-links {
     font-family: "Heebo-Regular";
     background-color: #fdfdfd !important;
@@ -91,7 +91,7 @@ header {
         header .header-links ul li a {
           white-space: nowrap;
           text-decoration: none;
-          font-size: 1.45rem;
+          font-size: 1.47rem;
           color: #575762; }
         header .header-links ul li.active {
           font-family: "Heebo-Bold";
@@ -114,14 +114,14 @@ header {
       text-transform: uppercase;
       text-decoration: none;
       white-space: nowrap;
-      height: 2.8rem;
+      height: 2.9rem;
       display: flex;
       align-items: center;
       margin-left: auto;
-      padding: 0 1.4rem;
+      padding: 0 1.45rem;
       font-size: 1.235rem;
       color: #fff;
-      border-radius: 14px;
+      border-radius: 14.1px;
       background-color: #fd2851; }
       header .header-links-btn.header-links-btn-blue, header .header-links-btn:hover.header-links-btn-blue {
         background-color: #1477fc; }
