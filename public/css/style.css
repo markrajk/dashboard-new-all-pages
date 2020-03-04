@@ -550,13 +550,14 @@ main {
       border-radius: 4px;
       border: 1px solid #fff; }
       .section-manage-other-teams .graph-card .btn-hover-delete {
-        margin-top: -3.9rem;
+        margin-top: -1.95rem;
         text-decoration: none;
         background-color: #fff;
         font-weight: bold;
         color: #000;
         margin-bottom: 1.1rem; }
       .section-manage-other-teams .graph-card .btn-hover-cancel {
+        margin-bottom: -1.95rem;
         text-decoration: none;
         background-color: rgba(0, 0, 0, 0.59);
         border-color: #FFF;
