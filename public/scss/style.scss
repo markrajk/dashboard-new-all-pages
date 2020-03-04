@@ -364,8 +364,8 @@ main {
     height: 34rem;
     width: 100%;
     padding-bottom: 3rem;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5;
+    border-radius: 8px;
+    border: solid 1px #f5f5f5;
   
     &-1 {
       grid-area: card1;
@@ -466,10 +466,10 @@ main {
   
     & .card-header {
       padding: 2rem 2.6rem;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-bottom: solid 1.3px #f5f5f5;
-      border-top-left-radius: 13px;
-      border-top-right-radius: 13px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
   
       & span {
         margin-left: 0.2rem;
@@ -559,10 +559,10 @@ main {
       scrollbar-width: none; /* Firefox */
       //border: solid 1.14px rgba($color: #EAEBEE, $alpha: .67);
       border: none;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-top: none;
-      border-bottom-left-radius: 13px;
-      border-bottom-right-radius: 13px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
   
       &::-webkit-scrollbar {
         display: none; /* Safari and Chrome */
@@ -641,8 +641,8 @@ main {
     padding: 2rem;
     padding-bottom: 0;
     background-color: #fff;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5;
+    border-radius: 8px;
+    border: solid 1px #f5f5f5;
     & .graph-card {
       height: 50%;
       padding: none;
@@ -864,29 +864,88 @@ main {
       margin: 0 auto;
     }
 
-    & svg {
+    & .svg-btn {
+
+      & svg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-100%, 100%);
+        cursor: pointer;
+  
+        & .cls-1 {
+          fill: #fff;
+          stroke: #0087ff;
+          stroke-miterlimit: 10;
+          stroke-width: 1.5px;
+        }
+  
+        & .cls-2 {
+          fill: #0087ff;
+        }
+  
+        & .cls-3 {
+          stroke: none;
+        }
+  
+        & .cls-4 {
+          fill: none;
+        }
+      }
+      
+      &:active + .card-hover {
+        display: flex;
+      }
+    }
+
+    
+
+    & .card-hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: none;
       position: absolute;
-      right: 0;
       top: 0;
-      transform: translate(-100%, 100%);
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0, .63);
 
-      & .cls-1 {
-        fill: #fff;
-        stroke: #0087ff;
-        stroke-miterlimit: 10;
-        stroke-width: 1.5px;
+      &:hover {
+        display: flex;
+      }
+    }
+
+    .btn-hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Lato", sans-serif;
+      font-size: 1.2rem;
+      width: 11.7rem;
+      height: 2.8rem;
+      border-radius: 4px;
+      border: 1px solid #fff;
+      
+        
+
+      &-delete {
+        margin-top: -3.9rem;
+        text-decoration: none;
+        background-color: #fff;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 1.1rem;
       }
 
-      & .cls-2 {
-        fill: #0087ff;
-      }
-
-      & .cls-3 {
-        stroke: none;
-      }
-
-      & .cls-4 {
-        fill: none;
+      &-cancel {
+        text-decoration: none;
+        background-color: rgba(0,0,0, .59);
+        border-color: #FFF;
+        font-weight: bold;
+        color: #FFF;
       }
     }
 

@@ -182,8 +182,8 @@ main {
     height: 34rem;
     width: 100%;
     padding-bottom: 3rem;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5; }
+    border-radius: 8px;
+    border: solid 1px #f5f5f5; }
     .section-my-team .graph-card-1 {
       grid-area: card1; }
     .section-my-team .graph-card-2 {
@@ -252,10 +252,10 @@ main {
     border: none; }
     .section-my-team .people .card-header {
       padding: 2rem 2.6rem;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-bottom: solid 1.3px #f5f5f5;
-      border-top-left-radius: 13px;
-      border-top-right-radius: 13px; }
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
       .section-my-team .people .card-header span {
         margin-left: 0.2rem;
         font-weight: normal; }
@@ -296,10 +296,10 @@ main {
       scrollbar-width: none;
       /* Firefox */
       border: none;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-top: none;
-      border-bottom-left-radius: 13px;
-      border-bottom-right-radius: 13px; }
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px; }
       .section-my-team .people .list-group-flush::-webkit-scrollbar {
         display: none;
         /* Safari and Chrome */ }
@@ -354,8 +354,8 @@ main {
     padding: 2rem;
     padding-bottom: 0;
     background-color: #fff;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5; }
+    border-radius: 8px;
+    border: solid 1px #f5f5f5; }
     .section-my-team .overview .graph-card {
       height: 50%;
       padding: none;
@@ -506,22 +506,62 @@ main {
       .section-manage-other-teams .graph-card {
         min-width: 60rem;
         margin: 0 auto; } }
-    .section-manage-other-teams .graph-card svg {
+    .section-manage-other-teams .graph-card .svg-btn svg {
       position: absolute;
       right: 0;
       top: 0;
-      transform: translate(-100%, 100%); }
-      .section-manage-other-teams .graph-card svg .cls-1 {
+      transform: translate(-100%, 100%);
+      cursor: pointer; }
+      .section-manage-other-teams .graph-card .svg-btn svg .cls-1 {
         fill: #fff;
         stroke: #0087ff;
         stroke-miterlimit: 10;
         stroke-width: 1.5px; }
-      .section-manage-other-teams .graph-card svg .cls-2 {
+      .section-manage-other-teams .graph-card .svg-btn svg .cls-2 {
         fill: #0087ff; }
-      .section-manage-other-teams .graph-card svg .cls-3 {
+      .section-manage-other-teams .graph-card .svg-btn svg .cls-3 {
         stroke: none; }
-      .section-manage-other-teams .graph-card svg .cls-4 {
+      .section-manage-other-teams .graph-card .svg-btn svg .cls-4 {
         fill: none; }
+    .section-manage-other-teams .graph-card .svg-btn:active + .card-hover {
+      display: flex; }
+    .section-manage-other-teams .graph-card .card-hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.63); }
+      .section-manage-other-teams .graph-card .card-hover:hover {
+        display: flex; }
+    .section-manage-other-teams .graph-card .btn-hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Lato", sans-serif;
+      font-size: 1.2rem;
+      width: 11.7rem;
+      height: 2.8rem;
+      border-radius: 4px;
+      border: 1px solid #fff; }
+      .section-manage-other-teams .graph-card .btn-hover-delete {
+        margin-top: -3.9rem;
+        text-decoration: none;
+        background-color: #fff;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 1.1rem; }
+      .section-manage-other-teams .graph-card .btn-hover-cancel {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.59);
+        border-color: #FFF;
+        font-weight: bold;
+        color: #FFF; }
     .section-manage-other-teams .graph-card-footer {
       height: 6rem;
       border-top: 1.5px solid #eaebee; }
