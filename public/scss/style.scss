@@ -206,6 +206,7 @@ header {
     }
 
     &-right {
+      font-family: "Heebo-Medium";
       margin-top: .05rem;
       font-size: 1.345rem;
     }
@@ -749,7 +750,7 @@ main {
 //SECTION MANAGE OTHER TEAMS START
 //=============================================
 .section-manage-other-teams {
-  padding-top: 4rem;
+  padding-top: 2.75rem;
   display: grid;
   grid-gap: 3.2rem;
   grid-template-areas:
@@ -785,6 +786,66 @@ main {
       "card1"
       "card4";
     grid-template-columns: 1fr;
+  }
+
+  &-header {
+    padding-top: 1.85rem;
+    padding-bottom: 1.95rem;
+    border-bottom: solid 1.25px #E4E4E4;
+    & .subheader {
+      opacity: 0;
+      visibility: hidden;
+      margin-bottom: .6rem;
+      display: flex;
+      align-items: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1a173b;
+    }
+  
+    & h2 {
+      display: block;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 2.45rem;
+      letter-spacing: -0.39px;
+      color: #202026;
+  
+      & span {
+        font-weight: 600;
+      }
+  
+      & svg {
+        margin-left: 2rem;
+        margin-top: -.2rem;
+        width: 2.1rem;
+        height: 2.1rem;
+  
+        & .cls-1 {
+          fill: #1477fc;
+        }
+  
+        & .cls-2 {
+          fill: none;
+          stroke: #fff;
+          stroke-linecap: round;
+          stroke-width: 1.5px;
+        }
+      }
+    }
+  
+    & .custom-dd-link {
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.38px;
+      color: #1477fc;
+  
+      & .search {
+        margin-right: .5rem;
+        font-size: 3rem;
+      }
+    }
   }
 
   &-add-new {
@@ -1256,24 +1317,69 @@ main {
 .section-give-feedback {
   padding-bottom: 3rem;
 
-  & h2 {
-    margin: 0;
-    padding-top: 3.7rem;
-    padding-bottom: 1.2rem;
-    margin-bottom: 2.8rem;
-    font-family: "Open Sans", sans-serif;
-    font-size: 2.6rem;
-    letter-spacing: -0.39px;
-    color: #1d1d21;
+  &-header {
+    padding-top: 1.85rem;
+    padding-bottom: 1.95rem;
     border-bottom: solid 1.25px #E4E4E4;
-
-    & span {
+    & .subheader {
+      margin-left: -.8rem;
+      opacity: 0;
+      visibility: hidden;
+      margin-bottom: .6rem;
+      display: flex;
+      align-items: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
       font-weight: 600;
+      color: #1a173b;
+    }
+  
+    & h2 {
+      display: block;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 2.45rem;
+      letter-spacing: -0.39px;
+      color: #202026;
+  
+      & span {
+        font-weight: 600;
+      }
+  
+      & svg {
+        margin-left: 2rem;
+        margin-top: -.2rem;
+        width: 2.1rem;
+        height: 2.1rem;
+  
+        & .cls-1 {
+          fill: #1477fc;
+        }
+  
+        & .cls-2 {
+          fill: none;
+          stroke: #fff;
+          stroke-linecap: round;
+          stroke-width: 1.5px;
+        }
+      }
+    }
+  
+    & .custom-dd-link {
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.38px;
+      color: #1477fc;
+  
+      & .search {
+        margin-right: .5rem;
+        font-size: 3rem;
+      }
     }
   }
 
   &-main {
-    //padding-top: 4rem;
+    padding-top: 2.8rem;
     display: grid;
     grid-gap: 3.2rem;
     grid-template-areas:
@@ -1317,10 +1423,10 @@ main {
       & .card-header {
         padding: 1.7rem 3.3rem;
         padding-bottom: 1.5rem;
-        border: solid 1.5px #f5f5f5;
-        border-bottom: solid 1.3px #f5f5f5;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px;
+        border: solid 1px #f5f5f5;
+        border-bottom: solid 1px #f5f5f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     
         & .search {
           margin-top: 1.9rem;
@@ -1422,10 +1528,10 @@ main {
         -ms-overflow-style: none; /* Internet Explorer 10+ */
         scrollbar-width: none; /* Firefox */
         border: none;
-        border: solid 1.5px #f5f5f5;
+        border: solid 1px #f5f5f5;
         border-top: none;
-        border-bottom-left-radius: 13px;
-        border-bottom-right-radius: 13px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     
         &::-webkit-scrollbar {
           display: none; /* Safari and Chrome */
@@ -1531,13 +1637,13 @@ main {
       padding: 1.7rem 3.3rem;
       padding-bottom: 1.5rem;
       background-color: #FFF;
-      border: solid 1.5px #f5f5f5;
-      border-radius: 13px;
+      border: solid 1px #f5f5f5;
+      border-radius: 8px;
 
       &-header {
 
         & h4 {
-          margin-top: 0.15rem;
+          margin-top: 0.1rem;
           margin-bottom: 0.8rem;
           font-family: "Heebo-Medium";
           font-size: 1.16rem;
@@ -1761,7 +1867,7 @@ main {
         font-family: "Open Sans", sans-serif;
         font-size: 2.45rem;
         letter-spacing: -0.39px;
-        color: #1d1d21;
+        color: #202026;
     
         & span {
           font-weight: 600;
@@ -1788,13 +1894,13 @@ main {
     
       & .custom-dd-link {
         font-family: "Heebo-Medium";
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 0.38px;
         color: #1477fc;
     
         & .search {
           margin-right: .5rem;
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
       }
     }
@@ -1906,6 +2012,7 @@ main {
       padding-top: 1.85rem;
       padding-bottom: 1.95rem;
       & .subheader {
+        margin-left: -.8rem;
         margin-bottom: .6rem;
         display: flex;
         align-items: center;
@@ -1921,7 +2028,7 @@ main {
         font-family: "Open Sans", sans-serif;
         font-size: 2.45rem;
         letter-spacing: -0.39px;
-        color: #1d1d21;
+        color: #202026;
     
         & span {
           font-weight: 600;
@@ -1949,13 +2056,13 @@ main {
     
       & .custom-dd-link {
         font-family: "Heebo-Medium";
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 0.38px;
         color: #1477fc;
     
         & .search {
           margin-right: .5rem;
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
       }
     }
@@ -1963,7 +2070,8 @@ main {
     &-table {
       .panel-body {
         & table {
-          border: 1px solid #E5E5E5;
+          border-radius: 8px;
+          border: solid 1px #f5f5f5;
 
           & thead {
             border: none!important
@@ -2012,7 +2120,7 @@ main {
             margin-right: 0px;
       
             & tr > th {
-              border-bottom: 1px solid #E5E5E5;
+              border-bottom: solid 1px #f5f5f5;
               border-top: none;
               font-family: "Heebo-Bold";
               font-size: 1.3rem;
@@ -2041,7 +2149,7 @@ main {
             }
       
             & tr:not(:last-child) > td {
-              border-bottom: 1px solid #E5E5E5;
+              border-bottom: solid 1px #f5f5f5;
             }
           }
           &.flex-table tr {
@@ -2081,7 +2189,7 @@ main {
 //SECTION TEAM EXAMPLE START
 //=============================================
 .section-example-team {
-  padding-top: 2.8rem;
+  padding-top: 2.75rem;
   display: grid;
   grid-gap: 3.2rem;
   grid-template-areas:
@@ -2112,6 +2220,9 @@ main {
     padding-bottom: 1.95rem;
     border-bottom: solid 1.25px #E4E4E4;
     & .subheader {
+      margin-left: -.8rem;
+      // opacity: 0;
+      // visibility: hidden;
       margin-bottom: .6rem;
       display: flex;
       align-items: center;
@@ -2125,9 +2236,9 @@ main {
       display: block;
       margin: 0;
       font-family: "Open Sans", sans-serif;
-      font-size: 2.6rem;
+      font-size: 2.45rem;
       letter-spacing: -0.39px;
-      color: #1d1d21;
+      color: #202026;
   
       & span {
         font-weight: 600;
@@ -2164,13 +2275,12 @@ main {
       }
     }
   }
-
   & .graph-card {
     height: 34rem;
     width: 100%;
     padding-bottom: 3rem;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5;
+    border-radius: 8px;
+    border: solid 1px #f5f5f5;
   
     &-1 {
       grid-area: card1;
@@ -2262,7 +2372,7 @@ main {
     }
   }
 
-  & .people {
+  .people {
     font-family: "Lato";
     grid-area: card4;
     height: auto;
@@ -2271,10 +2381,10 @@ main {
   
     & .card-header {
       padding: 2rem 2.6rem;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-bottom: solid 1.3px #f5f5f5;
-      border-top-left-radius: 13px;
-      border-top-right-radius: 13px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
   
       & span {
         margin-left: 0.2rem;
@@ -2298,37 +2408,27 @@ main {
         color: #88888c;
         letter-spacing: 0.24px;
       }
-  
-      & .add-btn {
-        align-self: center;
-        display: inline-block;
-        position: relative;
-        width: 33px;
-        height: 33px;
-        border: 2px solid #0087ff;
-        border-radius: 50%;
-        cursor: pointer;
-  
-        &::before {
-          content: "";
-          position: absolute;
-          width: 14px;
-          height: 2px;
-          background-color: #0087ff;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+
+      & svg {
+        width: 3.2775rem;
+        height: 3.311rem;
+        .cls-1 {
+          fill: #fff;
+          stroke: #1477fc;
+          stroke-miterlimit: 10;
+          stroke-width: .175rem;
         }
   
-        &::after {
-          content: "";
-          position: absolute;
-          width: 2px;
-          height: 14px;
-          background-color: #0087ff;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+        .cls-2 {
+          fill: #1477fc;
+        }
+  
+        .cls-3 {
+          stroke: none;
+        }
+  
+        .cls-4 {
+          fill: none;
         }
       }
     }
@@ -2341,10 +2441,10 @@ main {
       scrollbar-width: none; /* Firefox */
       //border: solid 1.14px rgba($color: #EAEBEE, $alpha: .67);
       border: none;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-top: none;
-      border-bottom-left-radius: 13px;
-      border-bottom-right-radius: 13px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
   
       &::-webkit-scrollbar {
         display: none; /* Safari and Chrome */
@@ -2379,6 +2479,8 @@ main {
       & img {
         width: 2.7rem;
         height: 2.7rem;
+        //border: solid .35px #e5e5e5;
+        box-shadow: 0 0 0 .35px #d5d5d5;
       }
   
       & .name {
@@ -2405,6 +2507,7 @@ main {
         color: #fff;
         font-weight: 700;
         border-radius: 3px;
+        letter-spacing: .35px;
   
         &-green {
           background: $green-gradient;
@@ -2419,12 +2522,12 @@ main {
     }
   }
 
-  & .overview {
+  .overview {
     padding: 2rem;
     padding-bottom: 0;
     background-color: #fff;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5;
+    border-radius: 8px;
+    border: solid 1px #f5f5f5;
     & .graph-card {
       height: 50%;
       padding: none;
@@ -2460,7 +2563,7 @@ main {
     }
   
     &-bottom {
-        height: 50%;
+      height: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -2469,7 +2572,7 @@ main {
       &-top {
         display: flex;
         padding: 0 1.6rem;
-        margin: 0 .4rem;
+        margin: 0 0.4rem;
         padding-top: 2.4rem;
         padding-bottom: 3rem;
         border-top: solid 1.25px #f1f1f3;
@@ -2478,7 +2581,7 @@ main {
   
         &-second,
         &-first {
-          margin-right: .5rem;
+          margin-right: 0.5rem;
         }
   
         & h3 {
@@ -2496,10 +2599,10 @@ main {
           color: #7b7986;
   
           & span {
-              margin-top: .1rem;
-              margin-right: .1rem;
+            margin-top: 0.1rem;
+            margin-right: 0.1rem;
             display: inline-block;
-            margin-left: .5rem;
+            margin-left: 0.5rem;
             font-family: "Heebo-Bold";
             font-size: 1.1rem;
             color: #fff;
@@ -2521,7 +2624,7 @@ main {
       &-6,
       &-12 {
         padding: 1.7rem 1.6rem;
-        margin: 0 .4rem;
+        margin: 0 0.4rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -2543,7 +2646,7 @@ main {
           text-decoration: none;
           font-family: "Heebo-Bold";
           padding: 0.5rem 1.7rem;
-          padding-top: .7rem;
+          padding-top: 0.7rem;
           font-size: 1.2rem;
           line-height: 1.2rem;
           color: #007aff;
@@ -2553,7 +2656,7 @@ main {
       }
   
       &-text {
-          margin-left: 1rem; 
+        margin-left: 1rem;
         display: inline-block;
         padding-top: 1.2rem;
         //padding-bottom: 2rem;

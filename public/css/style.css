@@ -68,6 +68,7 @@ header {
         border-radius: 50%;
         box-shadow: 0 0 0 .35px #d5d5d5; }
     header .navbar-right {
+      font-family: "Heebo-Medium";
       margin-top: .05rem;
       font-size: 1.345rem; }
   header .header-links {
@@ -448,7 +449,7 @@ main {
         color: #777779; }
 
 .section-manage-other-teams {
-  padding-top: 4rem;
+  padding-top: 2.75rem;
   display: grid;
   grid-gap: 3.2rem;
   grid-template-areas: "card1 card2 card3" "card4 card4 card5";
@@ -474,6 +475,49 @@ main {
       grid-gap: 1.6rem;
       grid-template-areas: "card1" "card4";
       grid-template-columns: 1fr; } }
+  .section-manage-other-teams-header {
+    padding-top: 1.85rem;
+    padding-bottom: 1.95rem;
+    border-bottom: solid 1.25px #E4E4E4; }
+    .section-manage-other-teams-header .subheader {
+      opacity: 0;
+      visibility: hidden;
+      margin-bottom: .6rem;
+      display: flex;
+      align-items: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1a173b; }
+    .section-manage-other-teams-header h2 {
+      display: block;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 2.45rem;
+      letter-spacing: -0.39px;
+      color: #202026; }
+      .section-manage-other-teams-header h2 span {
+        font-weight: 600; }
+      .section-manage-other-teams-header h2 svg {
+        margin-left: 2rem;
+        margin-top: -.2rem;
+        width: 2.1rem;
+        height: 2.1rem; }
+        .section-manage-other-teams-header h2 svg .cls-1 {
+          fill: #1477fc; }
+        .section-manage-other-teams-header h2 svg .cls-2 {
+          fill: none;
+          stroke: #fff;
+          stroke-linecap: round;
+          stroke-width: 1.5px; }
+    .section-manage-other-teams-header .custom-dd-link {
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.38px;
+      color: #1477fc; }
+      .section-manage-other-teams-header .custom-dd-link .search {
+        margin-right: .5rem;
+        font-size: 3rem; }
   .section-manage-other-teams-add-new {
     padding-bottom: 3rem;
     margin-top: 2.5rem;
@@ -783,19 +827,52 @@ main {
 
 .section-give-feedback {
   padding-bottom: 3rem; }
-  .section-give-feedback h2 {
-    margin: 0;
-    padding-top: 3.7rem;
-    padding-bottom: 1.2rem;
-    margin-bottom: 2.8rem;
-    font-family: "Open Sans", sans-serif;
-    font-size: 2.6rem;
-    letter-spacing: -0.39px;
-    color: #1d1d21;
+  .section-give-feedback-header {
+    padding-top: 1.85rem;
+    padding-bottom: 1.95rem;
     border-bottom: solid 1.25px #E4E4E4; }
-    .section-give-feedback h2 span {
-      font-weight: 600; }
+    .section-give-feedback-header .subheader {
+      margin-left: -.8rem;
+      opacity: 0;
+      visibility: hidden;
+      margin-bottom: .6rem;
+      display: flex;
+      align-items: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1a173b; }
+    .section-give-feedback-header h2 {
+      display: block;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 2.45rem;
+      letter-spacing: -0.39px;
+      color: #202026; }
+      .section-give-feedback-header h2 span {
+        font-weight: 600; }
+      .section-give-feedback-header h2 svg {
+        margin-left: 2rem;
+        margin-top: -.2rem;
+        width: 2.1rem;
+        height: 2.1rem; }
+        .section-give-feedback-header h2 svg .cls-1 {
+          fill: #1477fc; }
+        .section-give-feedback-header h2 svg .cls-2 {
+          fill: none;
+          stroke: #fff;
+          stroke-linecap: round;
+          stroke-width: 1.5px; }
+    .section-give-feedback-header .custom-dd-link {
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.38px;
+      color: #1477fc; }
+      .section-give-feedback-header .custom-dd-link .search {
+        margin-right: .5rem;
+        font-size: 3rem; }
   .section-give-feedback-main {
+    padding-top: 2.8rem;
     display: grid;
     grid-gap: 3.2rem;
     grid-template-areas: "card1 card2";
@@ -828,10 +905,10 @@ main {
       .section-give-feedback-main .people .card-header {
         padding: 1.7rem 3.3rem;
         padding-bottom: 1.5rem;
-        border: solid 1.5px #f5f5f5;
-        border-bottom: solid 1.3px #f5f5f5;
-        border-top-left-radius: 13px;
-        border-top-right-radius: 13px; }
+        border: solid 1px #f5f5f5;
+        border-bottom: solid 1px #f5f5f5;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px; }
         .section-give-feedback-main .people .card-header .search {
           margin-top: 1.9rem;
           display: block;
@@ -913,10 +990,10 @@ main {
         scrollbar-width: none;
         /* Firefox */
         border: none;
-        border: solid 1.5px #f5f5f5;
+        border: solid 1px #f5f5f5;
         border-top: none;
-        border-bottom-left-radius: 13px;
-        border-bottom-right-radius: 13px; }
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px; }
         .section-give-feedback-main .people .list-group-flush::-webkit-scrollbar {
           display: none;
           /* Safari and Chrome */ }
@@ -987,10 +1064,10 @@ main {
       padding: 1.7rem 3.3rem;
       padding-bottom: 1.5rem;
       background-color: #FFF;
-      border: solid 1.5px #f5f5f5;
-      border-radius: 13px; }
+      border: solid 1px #f5f5f5;
+      border-radius: 8px; }
       .section-give-feedback-main .employee-header h4 {
-        margin-top: 0.15rem;
+        margin-top: 0.1rem;
         margin-bottom: 0.8rem;
         font-family: "Heebo-Medium";
         font-size: 1.16rem;
@@ -1150,7 +1227,7 @@ main {
         font-family: "Open Sans", sans-serif;
         font-size: 2.45rem;
         letter-spacing: -0.39px;
-        color: #1d1d21; }
+        color: #202026; }
         .section-team-settings-main-header h2 span {
           font-weight: 600; }
         .section-team-settings-main-header h2 svg {
@@ -1167,12 +1244,12 @@ main {
             stroke-width: 1.5px; }
       .section-team-settings-main-header .custom-dd-link {
         font-family: "Heebo-Medium";
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 0.38px;
         color: #1477fc; }
         .section-team-settings-main-header .custom-dd-link .search {
           margin-right: .5rem;
-          font-size: 3rem; }
+          font-size: 2.5rem; }
     .section-team-settings-main-table {
       border-top: 1px solid #F3F3F3; }
       .section-team-settings-main-table .table-row {
@@ -1245,6 +1322,7 @@ main {
       padding-top: 1.85rem;
       padding-bottom: 1.95rem; }
       .section-team-settings-member-main-header .subheader {
+        margin-left: -.8rem;
         margin-bottom: .6rem;
         display: flex;
         align-items: center;
@@ -1258,7 +1336,7 @@ main {
         font-family: "Open Sans", sans-serif;
         font-size: 2.45rem;
         letter-spacing: -0.39px;
-        color: #1d1d21; }
+        color: #202026; }
         .section-team-settings-member-main-header h2 span {
           font-weight: 600; }
         .section-team-settings-member-main-header h2 svg {
@@ -1276,14 +1354,15 @@ main {
             stroke-width: 1.5px; }
       .section-team-settings-member-main-header .custom-dd-link {
         font-family: "Heebo-Medium";
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 0.38px;
         color: #1477fc; }
         .section-team-settings-member-main-header .custom-dd-link .search {
           margin-right: .5rem;
-          font-size: 3rem; }
+          font-size: 2.5rem; }
     .section-team-settings-member-main-table .panel-body table {
-      border: 1px solid #E5E5E5;
+      border-radius: 8px;
+      border: solid 1px #f5f5f5;
       /* Flex Table */ }
       .section-team-settings-member-main-table .panel-body table thead {
         border: none !important; }
@@ -1316,7 +1395,7 @@ main {
       .section-team-settings-member-main-table .panel-body table.flex-table thead {
         margin-right: 0px; }
         .section-team-settings-member-main-table .panel-body table.flex-table thead tr > th {
-          border-bottom: 1px solid #E5E5E5;
+          border-bottom: solid 1px #f5f5f5;
           border-top: none;
           font-family: "Heebo-Bold";
           font-size: 1.3rem;
@@ -1338,7 +1417,7 @@ main {
         .section-team-settings-member-main-table .panel-body table.flex-table tbody tr > td {
           border-top: none; }
         .section-team-settings-member-main-table .panel-body table.flex-table tbody tr:not(:last-child) > td {
-          border-bottom: 1px solid #E5E5E5; }
+          border-bottom: solid 1px #f5f5f5; }
       .section-team-settings-member-main-table .panel-body table.flex-table tr {
         width: 100%;
         display: flex; }
@@ -1356,7 +1435,7 @@ main {
         width: 25px !important; }
 
 .section-example-team {
-  padding-top: 2.8rem;
+  padding-top: 2.75rem;
   display: grid;
   grid-gap: 3.2rem;
   grid-template-areas: "card1 card2 card3" "card4 card4 card5";
@@ -1380,6 +1459,7 @@ main {
     padding-bottom: 1.95rem;
     border-bottom: solid 1.25px #E4E4E4; }
     .section-example-team-header .subheader {
+      margin-left: -.8rem;
       margin-bottom: .6rem;
       display: flex;
       align-items: center;
@@ -1391,9 +1471,9 @@ main {
       display: block;
       margin: 0;
       font-family: "Open Sans", sans-serif;
-      font-size: 2.6rem;
+      font-size: 2.45rem;
       letter-spacing: -0.39px;
-      color: #1d1d21; }
+      color: #202026; }
       .section-example-team-header h2 span {
         font-weight: 600; }
       .section-example-team-header h2 svg {
@@ -1420,8 +1500,8 @@ main {
     height: 34rem;
     width: 100%;
     padding-bottom: 3rem;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5; }
+    border-radius: 8px;
+    border: solid 1px #f5f5f5; }
     .section-example-team .graph-card-1 {
       grid-area: card1; }
     .section-example-team .graph-card-2 {
@@ -1490,10 +1570,10 @@ main {
     border: none; }
     .section-example-team .people .card-header {
       padding: 2rem 2.6rem;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-bottom: solid 1.3px #f5f5f5;
-      border-top-left-radius: 13px;
-      border-top-right-radius: 13px; }
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
       .section-example-team .people .card-header span {
         margin-left: 0.2rem;
         font-weight: normal; }
@@ -1511,33 +1591,20 @@ main {
         font-size: 1.16rem;
         color: #88888c;
         letter-spacing: 0.24px; }
-      .section-example-team .people .card-header .add-btn {
-        align-self: center;
-        display: inline-block;
-        position: relative;
-        width: 33px;
-        height: 33px;
-        border: 2px solid #0087ff;
-        border-radius: 50%;
-        cursor: pointer; }
-        .section-example-team .people .card-header .add-btn::before {
-          content: "";
-          position: absolute;
-          width: 14px;
-          height: 2px;
-          background-color: #0087ff;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
-        .section-example-team .people .card-header .add-btn::after {
-          content: "";
-          position: absolute;
-          width: 2px;
-          height: 14px;
-          background-color: #0087ff;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
+      .section-example-team .people .card-header svg {
+        width: 3.2775rem;
+        height: 3.311rem; }
+        .section-example-team .people .card-header svg .cls-1 {
+          fill: #fff;
+          stroke: #1477fc;
+          stroke-miterlimit: 10;
+          stroke-width: .175rem; }
+        .section-example-team .people .card-header svg .cls-2 {
+          fill: #1477fc; }
+        .section-example-team .people .card-header svg .cls-3 {
+          stroke: none; }
+        .section-example-team .people .card-header svg .cls-4 {
+          fill: none; }
     .section-example-team .people .list-group-flush {
       max-height: calc(100% - 12.1rem);
       overflow-y: scroll;
@@ -1547,10 +1614,10 @@ main {
       scrollbar-width: none;
       /* Firefox */
       border: none;
-      border: solid 1.5px #f5f5f5;
+      border: solid 1px #f5f5f5;
       border-top: none;
-      border-bottom-left-radius: 13px;
-      border-bottom-right-radius: 13px; }
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px; }
       .section-example-team .people .list-group-flush::-webkit-scrollbar {
         display: none;
         /* Safari and Chrome */ }
@@ -1574,7 +1641,8 @@ main {
           text-align: center; }
       .section-example-team .people .list-group-item img {
         width: 2.7rem;
-        height: 2.7rem; }
+        height: 2.7rem;
+        box-shadow: 0 0 0 .35px #d5d5d5; }
       .section-example-team .people .list-group-item .name {
         padding-left: 1.8rem;
         font-weight: 700;
@@ -1594,7 +1662,8 @@ main {
         padding: 0.65rem 0;
         color: #fff;
         font-weight: 700;
-        border-radius: 3px; }
+        border-radius: 3px;
+        letter-spacing: .35px; }
         .section-example-team .people .list-group-item .btn-custom-green {
           background: linear-gradient(#3cf166, #17de24); }
         .section-example-team .people .list-group-item .btn-custom-orange {
@@ -1605,8 +1674,8 @@ main {
     padding: 2rem;
     padding-bottom: 0;
     background-color: #fff;
-    border-radius: 13px;
-    border: solid 1.5px #f5f5f5; }
+    border-radius: 8px;
+    border: solid 1px #f5f5f5; }
     .section-example-team .overview .graph-card {
       height: 50%;
       padding: none;
@@ -1637,14 +1706,14 @@ main {
       .section-example-team .overview-bottom-top {
         display: flex;
         padding: 0 1.6rem;
-        margin: 0 .4rem;
+        margin: 0 0.4rem;
         padding-top: 2.4rem;
         padding-bottom: 3rem;
         border-top: solid 1.25px #f1f1f3;
         border-bottom: solid 1.25px #f1f1f3;
         justify-content: space-between; }
         .section-example-team .overview-bottom-top-second, .section-example-team .overview-bottom-top-first {
-          margin-right: .5rem; }
+          margin-right: 0.5rem; }
         .section-example-team .overview-bottom-top h3 {
           margin: 0;
           margin-bottom: 0.5rem;
@@ -1657,10 +1726,10 @@ main {
           font-size: 1.3rem;
           color: #7b7986; }
           .section-example-team .overview-bottom-top p span {
-            margin-top: .1rem;
-            margin-right: .1rem;
+            margin-top: 0.1rem;
+            margin-right: 0.1rem;
             display: inline-block;
-            margin-left: .5rem;
+            margin-left: 0.5rem;
             font-family: "Heebo-Bold";
             font-size: 1.1rem;
             color: #fff;
@@ -1672,7 +1741,7 @@ main {
               background-color: #fb2133; }
       .section-example-team .overview-bottom-6, .section-example-team .overview-bottom-12 {
         padding: 1.7rem 1.6rem;
-        margin: 0 .4rem;
+        margin: 0 0.4rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1690,7 +1759,7 @@ main {
           text-decoration: none;
           font-family: "Heebo-Bold";
           padding: 0.5rem 1.7rem;
-          padding-top: .7rem;
+          padding-top: 0.7rem;
           font-size: 1.2rem;
           line-height: 1.2rem;
           color: #007aff;
