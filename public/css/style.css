@@ -58,7 +58,7 @@ header {
       text-decoration: none;
       margin-left: 0.1rem;
       font-size: 1.4rem;
-      letter-spacing: .25px; }
+      letter-spacing: .15px; }
       header .navbar-left a {
         text-decoration: none; }
       header .navbar-left.active {
@@ -84,6 +84,10 @@ header {
       font-family: "Heebo-Medium";
       margin-top: .05rem;
       font-size: 1.345rem; }
+      header .navbar-right i {
+        margin-top: -.175rem;
+        margin-left: .5rem;
+        font-size: 1.8rem; }
   header .header-links {
     font-family: "Heebo-Regular";
     background-color: #fdfdfd !important;
@@ -877,7 +881,6 @@ main {
           color: #2C2F34; }
   .section-top .average-feedback {
     padding: 2rem;
-    padding-bottom: 3.5rem;
     background-color: #FFF;
     border-radius: 8px;
     border: solid 1px #f5f5f5; }
@@ -923,31 +926,33 @@ main {
           line-height: 1;
           font-size: 1.3rem; }
     .section-top .average-feedback-body {
-      position: relative; }
+      align-self: center;
+      position: relative;
+      width: 22.5rem;
+      height: 22.5rem;
+      margin-right: 10%; }
       .section-top .average-feedback-body img {
-        width: 26rem;
-        height: 22.5rem; }
+        width: 100%;
+        height: 100%; }
       .section-top .average-feedback-body-text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         position: absolute;
         top: 50%;
-        left: 52%;
-        width: 16rem;
-        height: 16rem;
+        left: 50%;
+        width: 17rem;
+        height: 17rem;
         transform: translate(-50%, -50%);
         background-color: #FFF;
         border-radius: 50%; }
         .section-top .average-feedback-body-text .top {
-          margin-top: 1rem;
+          margin-top: 4rem;
           font-family: "Heebo-Medium";
           font-size: 1.4rem;
           color: #000;
           letter-spacing: .25px; }
         .section-top .average-feedback-body-text .middle {
-          margin-top: -.3rem;
           font-family: "HankRnd-Bold";
           font-size: 3.3rem;
           color: #000;
@@ -1401,6 +1406,8 @@ main {
           display: flex;
           font-family: "Heebo-Regular";
           color: #333333; }
+        .section-team-settings-main-table .table-row-link {
+          color: #333333; }
 
 .section-team-settings-member {
   padding-bottom: 3rem;
@@ -1568,6 +1575,119 @@ main {
       .section-team-settings-member-main-table .panel-body table .checkbox {
         flex: 0.1 !important;
         width: 25px !important; }
+
+.section-user-settings {
+  background-color: #fff;
+  padding-bottom: 3rem;
+  min-height: calc(100vh - 13.225rem); }
+  .section-user-settings .side-menu {
+    padding-top: 5.35rem;
+    margin-left: -9rem;
+    margin-right: 2.3rem;
+    background-color: #FFF;
+    width: 18rem; }
+    @media (max-width: 1500px) {
+      .section-user-settings .side-menu {
+        margin-left: -3rem; } }
+    @media (max-width: 991px) {
+      .section-user-settings .side-menu {
+        margin-left: -1rem; } }
+    @media (max-width: 767px) {
+      .section-user-settings .side-menu {
+        margin-left: 0rem; } }
+    .section-user-settings .side-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .section-user-settings .side-menu ul li {
+        padding-left: 1rem;
+        height: 3.1rem;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer; }
+        .section-user-settings .side-menu ul li:hover {
+          background-color: #ededed; }
+        .section-user-settings .side-menu ul li.active {
+          background-color: #ededed; }
+        .section-user-settings .side-menu ul li a {
+          text-decoration: none;
+          font-family: "Heebo-Medium";
+          font-size: 1.35rem;
+          color: #333333; }
+  .section-user-settings-main {
+    width: 100%;
+    margin-right: -9rem;
+    background-color: #fff; }
+    @media (max-width: 1500px) {
+      .section-user-settings-main {
+        margin-right: -3rem; } }
+    @media (max-width: 991px) {
+      .section-user-settings-main {
+        margin-right: -1rem; } }
+    @media (max-width: 767px) {
+      .section-user-settings-main {
+        margin-right: 0rem; } }
+    .section-user-settings-main-header {
+      padding-top: 1.85rem;
+      padding-bottom: 1.95rem; }
+      .section-user-settings-main-header .subheader {
+        opacity: 0;
+        visibility: hidden;
+        margin-bottom: .6rem;
+        display: flex;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a173b; }
+      .section-user-settings-main-header h2 {
+        display: block;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 2.45rem;
+        letter-spacing: -0.39px;
+        color: #202026; }
+        .section-user-settings-main-header h2 span {
+          font-weight: 600; }
+        .section-user-settings-main-header h2 svg {
+          margin-left: 2rem;
+          margin-top: -.2rem;
+          width: 2.1rem;
+          height: 2.1rem; }
+          .section-user-settings-main-header h2 svg .cls-1 {
+            fill: #1477fc; }
+          .section-user-settings-main-header h2 svg .cls-2 {
+            fill: none;
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-width: 1.5px; }
+      .section-user-settings-main-header .custom-dd-link {
+        font-family: "Heebo-Medium";
+        font-size: 1.4rem;
+        letter-spacing: 0.38px;
+        color: #1477fc; }
+        .section-user-settings-main-header .custom-dd-link .search {
+          margin-right: .5rem;
+          font-size: 2.5rem; }
+    .section-user-settings-main-table {
+      border-top: 1px solid #F3F3F3; }
+      .section-user-settings-main-table .table-row {
+        height: 5.2rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #F3F3F3; }
+        .section-user-settings-main-table .table-row .column-1 {
+          width: 23rem;
+          font-family: "Heebo-Medium";
+          color: #333333; }
+        .section-user-settings-main-table .table-row .column-2 {
+          display: flex;
+          font-family: "Heebo-Regular";
+          color: #333333; }
+        .section-user-settings-main-table .table-row-link {
+          color: #333333; }
 
 .section-example-team {
   padding-top: 2.75rem;
