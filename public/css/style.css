@@ -495,20 +495,26 @@ main {
       grid-template-areas: "card1" "card4";
       grid-template-columns: 1fr; } }
   .section-manage-other-teams .modal {
-    padding-top: 24.15rem;
+    border: none;
+    padding-top: calc(23.15rem - 8.655rem);
     padding-right: 0 !important; }
     .section-manage-other-teams .modal .modal-dialog {
       margin: 0;
+      border: none;
       max-width: 100% !important; }
       .section-manage-other-teams .modal .modal-dialog .modal-content {
-        max-height: calc(100vh - 24.15rem - 2.8rem); }
+        max-height: calc(100vh - 24.15rem - 2.8rem + 1.15rem + 8.655rem);
+        border-radius: 8px;
+        border: none;
+        border: solid 1px #f5f5f5; }
       .section-manage-other-teams .modal .modal-dialog .modal-header {
+        border-radius: 8px;
         padding: 2.7rem;
         padding-bottom: 1rem;
         border-bottom: none !important; }
         .section-manage-other-teams .modal .modal-dialog .modal-header .modal-title {
           font-family: "Heebo-Bold";
-          font-size: 1.95rem;
+          font-size: 2.15rem;
           color: #1C193E; }
         .section-manage-other-teams .modal .modal-dialog .modal-header .search {
           margin-top: 1.9rem;
@@ -591,7 +597,7 @@ main {
               color: #666666; }
           .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table.flex-table tbody {
             flex: 1;
-            max-height: calc( 100vh - 14.4rem - 2.8rem - 6.9rem - 12.2rem - 6.9rem - 3rem );
+            max-height: calc( 100vh - 14.4rem - 2.8rem - 6.9rem - 12.2rem - 6.9rem - 3rem + 1.15rem + 8.655rem );
             overflow-y: auto;
             overflow-x: hidden;
             scrollbar-width: none;
