@@ -855,6 +855,9 @@ main {
   grid-template-areas: "card1 card2" "card3 card2";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 34rem 28rem; }
+  @media (max-width: 991px) {
+    .section-top {
+      grid-template-columns: 45% 55%; } }
   @media (max-width: 767px) {
     .section-top {
       width: 80%;
@@ -937,6 +940,9 @@ main {
         @media (max-width: 1400px) {
           .section-top .graph-card-body .bar:first-child {
             display: none !important; } }
+        @media (max-width: 767px) {
+          .section-top .graph-card-body .bar:first-child + .bar + .bar {
+            display: block !important; } }
         .section-top .graph-card-body .bar-fill {
           position: absolute;
           bottom: 0;
@@ -1090,12 +1096,22 @@ main {
     .section-top .average-feedback-body {
       align-self: center;
       position: relative;
-      width: 22.5rem;
-      height: 22.5rem;
       margin-left: 10vw; }
+      @media (max-width: 1199px) {
+        .section-top .average-feedback-body {
+          transform: scale(0.8);
+          margin-left: 1rem; } }
+      @media (max-width: 991px) {
+        .section-top .average-feedback-body {
+          transform: scale(0.8);
+          margin-left: -1rem; } }
+      @media (max-width: 767px) {
+        .section-top .average-feedback-body {
+          transform: scale(1);
+          margin-left: 10vw; } }
       .section-top .average-feedback-body img {
-        width: 100%;
-        height: 100%; }
+        width: 22.5rem;
+        height: 22.5rem; }
       .section-top .average-feedback-body-text {
         display: flex;
         flex-direction: column;
