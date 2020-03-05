@@ -370,7 +370,7 @@ main {
     "card4 card4 card5";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 34rem 68rem;
-  //min-width: 100rem !important;
+  min-width: 105rem !important;
 
   
 
@@ -695,7 +695,6 @@ main {
         border-top: solid 1.25px #f1f1f3;
         border-bottom: solid 1.25px #f1f1f3;
         justify-content: space-between;
-
   
         &-second,
         &-first {
