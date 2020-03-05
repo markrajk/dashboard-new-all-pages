@@ -92,8 +92,8 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
   }
 }
 
-@function resize($base) {
-  $result: $base * 0.9;
+@function resize($base,$value) {
+  $result: $base * $value;
   @return $result;
 }
 @function calculate($val1, $val2) {
@@ -1376,8 +1376,33 @@ main {
     "card3 card2";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 34rem 28rem;
-  min-width: 100rem !important;
+  //min-width: 100rem !important;
+  @include respond(desktop-sm) {
+    width: 80%;
+    margin: 0 auto;
+    grid-template-areas:
+    "card1"
+    "card3"
+    "card2";
 
+    grid-template-columns: 1fr;
+    grid-template-rows: 34rem 28rem 62rem;
+    //margin: 0 10rem;
+  }
+
+  @include respond(desktop-xsm) {
+    width: 100%;
+  }
+
+  // .card1,
+  // .card2,
+  // .card3 {
+
+  //   @include respond(desktop-sm) {
+  //     margin: 0
+  //   }
+  // }
+  
   & .card1 {
     grid-area: card1;
     font-family: "Heebo-Regular";
@@ -1540,6 +1565,10 @@ main {
         //margin-bottom: 1rem;
         font-size: 2.4rem;
         font-family: "Heebo-Regular";
+
+        // @include respond(desktop-md) {
+        //   font-size: 2rem;
+        // }
         
         & a {
           color: #000000;
@@ -1703,7 +1732,7 @@ main {
       position: relative;
       width: 22.5rem;
       height: 22.5rem;
-      margin-left: 10rem;
+      margin-left: 10vw;
       & img {
         width: 100%;
         height: 100%;
