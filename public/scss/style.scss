@@ -1021,20 +1021,33 @@ main {
                 width: 25px !important;
               }
 
-              & .team-command {
+              
+              & .team-name {
                 flex: .5!important;
+
+                @include respond(desktop-md) {
+                  flex: .75;
+                }
               }
 
               & .team-member {
                 flex: .5!important;
               }
 
-              & .team-name {
-                flex: .75!important;
-              }
-
               & .team-lead {
                 flex: .75!important;
+
+                // @include respond(desktop-md) {
+                //   flex: 1!important;
+                // }
+              }
+
+              & .team-command {
+                flex: .5!important;
+
+                // @include respond(desktop-md) {
+                //   flex: 1!important;
+                // }
               }
 
               & .spacer-left {

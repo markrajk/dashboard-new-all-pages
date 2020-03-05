@@ -630,14 +630,17 @@ main {
           .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .checkbox {
             flex: 0.1 !important;
             width: 25px !important; }
-          .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .team-command {
+          .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .team-name {
             flex: 0.5 !important; }
+            @media (max-width: 991px) {
+              .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .team-name {
+                flex: .75; } }
           .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .team-member {
             flex: 0.5 !important; }
-          .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .team-name {
-            flex: 0.75 !important; }
           .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .team-lead {
             flex: 0.75 !important; }
+          .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .team-command {
+            flex: 0.5 !important; }
           .section-manage-other-teams .modal .modal-dialog .modal-body-table .panel-body table .spacer-left {
             width: 2.7rem; }
   .section-manage-other-teams-header {
