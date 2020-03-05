@@ -1751,16 +1751,19 @@ main {
       margin-left: 10vw;
 
       @include respond(desktop-lg) {
+        margin-top: -2rem;
         transform: scale(.8);
-        margin-left: 1rem;
+        margin-left: 3rem;
       }
 
       @include respond(desktop-md) {
+        margin-top: -2rem;
         transform: scale(.8);
         margin-left: -1rem;
       }
 
       @include respond(desktop-sm) {
+        margin-top: 0;
         transform: scale(1);
         margin-left: 10vw;
       }
