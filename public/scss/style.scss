@@ -1894,7 +1894,16 @@ main {
       "card1 card2";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 57rem;
-    min-width: 100rem !important;
+    //min-width: 100rem !important;
+
+    @include respond(desktop-xsm) {
+      grid-template-areas:
+      "card1"
+      "card2";
+      grid-template-columns: 1fr;
+      grid-template-rows: 36.6rem 57rem;
+    }
+
   
     @include respond(desktop-xxl) {
       grid-gap: 2.9rem;
@@ -1906,14 +1915,6 @@ main {
   
     @include respond(desktop-lg) {
       grid-gap: 2rem;
-    }
-  
-    @include respond(desktop-md) {
-      grid-gap: 1.6rem;
-      grid-template-areas:
-      "card1 card2"
-      "card4 card4";
-      grid-template-columns: 1fr 1fr;
     }
   
     @include respond(desktop-md) {
@@ -2173,6 +2174,18 @@ main {
 
       &-body {
         padding: 0 6rem;
+
+        @include respond(desktop-md) {
+          padding: 0 3rem;
+        }
+
+        @include respond(desktop-sm) {
+          padding: 0;
+        }
+
+        @include respond(desktop-sm) {
+          padding: 0 3rem;
+        }
 
         & .rating {
           margin-top: 2.8rem;

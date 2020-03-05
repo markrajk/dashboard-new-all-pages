@@ -1197,8 +1197,12 @@ main {
     grid-gap: 3.2rem;
     grid-template-areas: "card1 card2";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 57rem;
-    min-width: 100rem !important; }
+    grid-template-rows: 57rem; }
+    @media (max-width: 575px) {
+      .section-give-feedback-main {
+        grid-template-areas: "card1" "card2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 36.6rem 57rem; } }
     @media (max-width: 1800px) {
       .section-give-feedback-main {
         grid-gap: 2.9rem; } }
@@ -1208,11 +1212,6 @@ main {
     @media (max-width: 1199px) {
       .section-give-feedback-main {
         grid-gap: 2rem; } }
-    @media (max-width: 991px) {
-      .section-give-feedback-main {
-        grid-gap: 1.6rem;
-        grid-template-areas: "card1 card2" "card4 card4";
-        grid-template-columns: 1fr 1fr; } }
     @media (max-width: 991px) {
       .section-give-feedback-main {
         grid-gap: 1.6rem; } }
@@ -1403,6 +1402,15 @@ main {
         color: #000; }
       .section-give-feedback-main .employee-body {
         padding: 0 6rem; }
+        @media (max-width: 991px) {
+          .section-give-feedback-main .employee-body {
+            padding: 0 3rem; } }
+        @media (max-width: 767px) {
+          .section-give-feedback-main .employee-body {
+            padding: 0; } }
+        @media (max-width: 767px) {
+          .section-give-feedback-main .employee-body {
+            padding: 0 3rem; } }
         .section-give-feedback-main .employee-body .rating {
           margin-top: 2.8rem;
           padding-bottom: 2.3rem;
