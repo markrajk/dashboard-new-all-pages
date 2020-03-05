@@ -1138,6 +1138,14 @@ main {
     border-radius: 8px;
     border: solid 1px #f5f5f5;
 
+    @include respond(desktop-sm) {
+      margin: 0 8rem;
+    }
+
+    @include respond(desktop-xsm) {
+      margin: 0;
+    }
+
     & .svg-btn {
 
       & svg {
