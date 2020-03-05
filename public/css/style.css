@@ -1934,7 +1934,7 @@ main {
   grid-template-areas: "card1 card2 card3" "card4 card4 card5";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 34rem 68rem;
-  min-width: 100rem !important; }
+  min-width: 105rem !important; }
   @media (max-width: 1800px) {
     .section-example-team {
       grid-gap: 2.9rem; } }
