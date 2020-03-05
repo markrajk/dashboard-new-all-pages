@@ -3412,6 +3412,11 @@ main {
   }
 
   @include respond(desktop-sm) {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  @include respond(desktop-xsm) {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
@@ -3442,6 +3447,11 @@ main {
   }
 
   @include respond(desktop-sm) {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+
+  @include respond(desktop-xsm) {
     margin-left: 1rem !important;
     margin-right: 1rem !important;
   }
