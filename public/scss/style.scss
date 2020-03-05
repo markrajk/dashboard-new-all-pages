@@ -1152,7 +1152,7 @@ main {
     border: solid 1px #f5f5f5;
 
     @include respond(desktop-sm) {
-      margin: 0 8rem;
+      margin: 0 10rem;
     }
 
     @include respond(desktop-xsm) {
