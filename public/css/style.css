@@ -50,6 +50,7 @@ header {
   font-family: "Heebo-Bold";
   z-index: 10000; }
   header .navbar {
+    height: 5.9rem;
     padding-top: 1rem !important;
     padding-bottom: 0.5rem !important;
     font-family: "Heebo-Bold";
