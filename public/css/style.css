@@ -157,6 +157,7 @@ header {
       border-radius: calc(50px/4);
       background-color: red;
       color: #FFF;
+      text-transform: uppercase;
       /* padding: 15px 60px; */
       border: none; }
       header .header-links-btn-new span, header .header-links-btn-new:hover span, header .header-links-btn-new:link span {
