@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <header class="section-sign-in-enter-email-header">
+    <header class="section-sign-in-check-email-header">
         <nav class="d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="../public/img/logo.png" alt="#">
@@ -23,21 +23,35 @@
         </nav>
     </header>
 
-    <section class="section-sign-in-enter-email">
-        <div class="section-sign-in-enter-email-card">
-            <h2>First, enter your email</h2>
-            <p class="sub-text">Please enter your cooperate email below.</p>
+    <section class="section-sign-in-check-email">
+        <div class="section-sign-in-check-email-card">
+            <h2>Check your email!</h2>
+            <p class="sub-text">
+                We’ve sent a 6-digit confirmation code
+                to <span class="email">maxmatinpalo@me.com</span>. Please enter it below.
+            </p>
            
-            <input type="email" placeholder="Enter your email...">
-            <a href="#" class="btn-custom-signin">Confirm</a>
+            <div class="input-container">
+                <div class="left">
+                    <input type="text" class="i-1" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    <input type="text" class="i-2" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    <input type="text" class="i-3" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                </div>
+                <span class="spacer"></span>
+                <div class="right">
+                    <input type="text" class="i-1" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    <input type="text" class="i-2" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    <input type="text" class="i-3" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                </div>
+            </div>
 
             <div class="img-container">
-                <img src="../public/img/sign-in-img-01.png" alt="#">
+                <img src="../public/img/sign-in-img-02.png" alt="#">
             </div>
         </div>
     </section>
 
-    <footer class="section-sign-in-enter-email-footer">
+    <footer class="section-sign-in-check-email-footer">
         <p>Copyright © 2020 Palautejärjestelmä Oy</p>
         <div class="options">
             <a href="#" class="active">Privacy Policy</a>

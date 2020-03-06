@@ -3744,8 +3744,6 @@ main {
       text-align: center;
       border: none;
       border-radius: 9px;
-
-      
     }
 
     & .img-container  {
@@ -3795,6 +3793,193 @@ main {
 }
 //=============================================
 //SECTION SIGN IN ENTER EMAIL END
+//=============================================
+
+
+
+//=============================================
+//SECTION SIGN IN CHECK EMAIL  START
+//=============================================
+.section-sign-in-check-email {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem);
+  min-height: 64.6rem;
+
+  &-header {
+
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    padding: 6rem 5.6rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+
+    & h2 {
+      margin-bottom: .6rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000;
+    }
+
+    & .sub-text {
+      margin-bottom: 5.6rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #414141;
+
+      & .email {
+        font-family: "Heebo-Medium";
+      }
+    }
+
+    & .input-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .left,
+      & .right {
+        display: flex;
+        border: solid 1px #8e8d8e;
+        border-radius: 5px;
+        overflow: hidden;
+
+        & input {
+          padding: 1.8rem 2rem;
+          outline: none;
+          height: 7.4rem;
+          max-width: 6.2rem;
+          border: none;
+          font-family: "Heebo-Medium";
+          font-size: 2.2rem;
+          color: #414141;
+          text-align: center;
+
+          &::placeholder {
+            color: rgba($color: #616061, $alpha: .7);
+          }
+
+          &::focus {
+            -webkit-box-shadow:inset 0 0 10px #000;
+             -moz-box-shadow:inset 0 0 10px #000;
+            box-shadow:inset 0 0 10px #000;
+          }
+        }
+
+        & .i-2 {
+          border-left: solid 1px #8e8d8e;
+          border-right: solid 1px #8e8d8e;
+        }
+      }
+    }
+
+    & .spacer {
+      display: inline-block;
+      height: .125rem;
+      width: 1.1rem;
+      background-color: #8E8D8E;
+    }
+
+    // & input {
+    //   outline:none;
+    //   font-family: "Heebo-Medium";
+    //   color: #616061;
+    //   //border-radius: 9px;
+    //   border: 1px solid #B7B7B7;
+
+    //   &::placeholder {
+    //     color: rgba($color: #616061, $alpha: .7);
+    //   }
+
+    //   &:focus {
+    //     box-shadow: 0 0 4px 4px rgba($color: #bde1f1, $alpha: .46);
+    //   }
+    // }
+
+    & .img-container  {
+      width: 100%;
+      text-align: center;
+      & img {
+        width: 39.4rem;
+        height: 27.2rem;
+      }
+    }
+  }
+
+  &-footer {
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN IN CHECK EMAIL END
 //=============================================
 
 

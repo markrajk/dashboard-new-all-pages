@@ -2514,6 +2514,123 @@ main {
         letter-spacing: -0.12px;
         color: #555555; }
 
+.section-sign-in-check-email {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem);
+  min-height: 64.6rem; }
+  .section-sign-in-check-email-header nav {
+    padding-left: 1.2rem;
+    padding-right: 2.4rem;
+    height: 6.9rem;
+    background-color: #FFF;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #f2f2f2; }
+    .section-sign-in-check-email-header nav .logo {
+      display: flex;
+      align-items: center; }
+      .section-sign-in-check-email-header nav .logo h1 {
+        display: inline-block;
+        margin: 0; }
+    .section-sign-in-check-email-header nav .btn-custom-sign-in-header {
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 8rem;
+      height: 3.6rem;
+      border-radius: 4px;
+      background-color: #0093ff;
+      color: #FFF; }
+  .section-sign-in-check-email-card {
+    padding: 6rem 5.6rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-check-email-card h2 {
+      margin-bottom: .6rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000; }
+    .section-sign-in-check-email-card .sub-text {
+      margin-bottom: 5.6rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #414141; }
+      .section-sign-in-check-email-card .sub-text .email {
+        font-family: "Heebo-Medium"; }
+    .section-sign-in-check-email-card .input-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .section-sign-in-check-email-card .input-container .left, .section-sign-in-check-email-card .input-container .right {
+        display: flex;
+        border: solid 1px #8e8d8e;
+        border-radius: 5px;
+        overflow: hidden; }
+        .section-sign-in-check-email-card .input-container .left input, .section-sign-in-check-email-card .input-container .right input {
+          padding: 1.8rem 2rem;
+          outline: none;
+          height: 7.4rem;
+          max-width: 6.2rem;
+          border: none;
+          font-family: "Heebo-Medium";
+          font-size: 2.2rem;
+          color: #414141;
+          text-align: center; }
+          .section-sign-in-check-email-card .input-container .left input::placeholder, .section-sign-in-check-email-card .input-container .right input::placeholder {
+            color: rgba(97, 96, 97, 0.7); }
+          .section-sign-in-check-email-card .input-container .left input::focus, .section-sign-in-check-email-card .input-container .right input::focus {
+            -webkit-box-shadow: inset 0 0 10px #000;
+            -moz-box-shadow: inset 0 0 10px #000;
+            box-shadow: inset 0 0 10px #000; }
+        .section-sign-in-check-email-card .input-container .left .i-2, .section-sign-in-check-email-card .input-container .right .i-2 {
+          border-left: solid 1px #8e8d8e;
+          border-right: solid 1px #8e8d8e; }
+    .section-sign-in-check-email-card .spacer {
+      display: inline-block;
+      height: .125rem;
+      width: 1.1rem;
+      background-color: #8E8D8E; }
+    .section-sign-in-check-email-card .img-container {
+      width: 100%;
+      text-align: center; }
+      .section-sign-in-check-email-card .img-container img {
+        width: 39.4rem;
+        height: 27.2rem; }
+  .section-sign-in-check-email-footer {
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-check-email-footer p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757; }
+    .section-sign-in-check-email-footer .options {
+      margin-left: 6.4rem;
+      margin-top: 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555; }
+      .section-sign-in-check-email-footer .options .active, .section-sign-in-check-email-footer .options a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555; }
+
 .options {
   margin-top: 0.5rem;
   margin-left: 0.2rem;
