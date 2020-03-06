@@ -166,11 +166,12 @@ html {
   }
 
   @include respond(desktop-lgxl) {
-    font-size: 50.5%;
+    font-size: 58%;
   }
 
   @include respond(desktop-md) {
-    font-size: 48%;
+    //font-size: 48%;
+    font-size: 53%;
   }
 }
 
