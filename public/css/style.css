@@ -1997,11 +1997,13 @@ main {
           stroke-linecap: round;
           stroke-width: 1.5px; }
     .section-example-team-header .custom-dd-link {
-      margin-bottom: -.2rem;
+      margin-bottom: -.35rem;
       font-family: "Heebo-Medium";
       font-size: 1.5rem;
       letter-spacing: 0.38px;
       color: #1477fc; }
+      .section-example-team-header .custom-dd-link i {
+        margin-top: -.1rem; }
       .section-example-team-header .custom-dd-link .search {
         margin-right: .5rem;
         font-size: 3rem; }
