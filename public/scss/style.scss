@@ -314,99 +314,9 @@ header {
         }
       }
     }
-
-    // &-btn-new,
-    // &-btn-new:hover, 
-    // &-btn-new:link {
-    //   font-family: "Heebo-Medium";
-    //   text-decoration: none;
-    //   margin-left: auto;
-    //   display: flex;
-    //   width: calc(300px / 4);
-    //   height: calc(100px / 4);
-    //   align-items: center;
-    //   justify-content: center;
-    //   font-size: calc(50px/4);
-    //   letter-spacing: .2px;
-    //   border: none;
-    //   border-radius: calc(50px/4);
-    //   background-color: red;
-    //   color: #FFF;
-    //   text-transform: uppercase;
-    //   /* padding: 15px 60px; */
-    //   border: none;
-
-    //   span {
-    //     margin-right: 5px;
-    //   }
-
-    //   &.header-links-btn-blue {
-    //     background-color: #1477fc;
-    //   }
-
-    //   & svg {
-    //     //margin-left: 5px;
-    //     width: 16px;
-    //     height: 16px;
-
-    //     .cls-1, .cls-2, .cls-4 {
-    //       fill: none;
-    //     }
-  
-    //     .cls-1, .cls-2 {
-    //       stroke: #fff;
-    //     }
-  
-    //     .cls-2 {
-    //       stroke-linecap: round;
-    //       stroke-width: 1.5px;
-    //     }
-  
-    //     .cls-3 {
-    //       stroke: none;
-    //     }
-    //   }
-    // }
-
-    & .a {
-      background-color: red;
-      color: white;
-      padding: 1em 1.5em;
-      text-decoration: none;
-      text-transform: uppercase;
-
-      & svg {
-        width: 1.6rem;
-        height: 1.6rem;
-        margin-left: 0.3rem;
-        margin-top: -0.2rem;
-
-        & .cls-1,
-        .cls-2,
-        .cls-4 {
-          fill: none;
-        }
-
-        & .cls-1,
-        .cls-2 {
-          stroke: #fff;
-        }
-
-        & .cls-2 {
-          stroke-linecap: round;
-          stroke-width: 0.15rem;
-        }
-
-        & .cls-3 {
-          stroke: none;
-        }
-      }
-    }
     
-
     &-btn,
     &-btn:hover {
-      //position: absolute;
       margin-top: -0.2rem;
       font-family: "Heebo-Medium";
       text-transform: uppercase;
@@ -416,7 +326,7 @@ header {
       display: flex;
       align-items: center;
       margin-left: auto;
-      padding: 0 1.45rem;
+      padding: .5rem 1.45rem;
       //padding: 0.5rem 1.4rem;
       //font-size: 1.235rem;
       font-size: 1.235rem;
