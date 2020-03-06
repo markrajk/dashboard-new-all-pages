@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <header class="section-sign-in-check-email-header">
+    <header class="section-sign-you-are-invited-header">
         <nav class="d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="../public/img/logo.png" alt="#">
@@ -23,35 +23,31 @@
         </nav>
     </header>
 
-    <section class="section-sign-in-check-email">
-        <div class="section-sign-in-check-email-card">
-            <h2>Check your email!</h2>
+    <section class="section-sign-you-are-invited">
+        <div class="section-sign-you-are-invited-card">
+            <h2>You are invited.</h2>
             <p class="sub-text">
-                We’ve sent a 6-digit confirmation code
-                to <span class="email">maxmatinpalo@me.com</span>. Please enter it below.
+                You’re invited to join the following team.
             </p>
-           
-            <div class="input-container">
-                <div class="left">
-                    <input type="text" class="i-1" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="1"/>
-                    <input type="text" class="i-2" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="2"/>
-                    <input type="text" class="i-3" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="3"/>
+
+            <div class="team-card">
+                <div class="team-icon">
+                    <span>A</span>
                 </div>
-                <span class="spacer"></span>
-                <div class="right">
-                    <input type="text" class="i-1" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="4"/>
-                    <input type="text" class="i-2" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="5"/>
-                    <input type="text" class="i-3" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="6"/>
+
+                <div class="team-info">
+                    <h3 class="team-name">Team Software</h3>
+                    <p class="team-inviter"><span>inviter:</span> max@213.fi</p>
                 </div>
+
+                <a href="#" class="btn-custom-signin">Join</a>
             </div>
 
-            <div class="img-container">
-                <img src="../public/img/sign-in-img-02.png" alt="#">
-            </div>
+            <p class="bottom-text">Click <a href="#">here</a> if this information is wrong.</p>
         </div>
     </section>
 
-    <footer class="section-sign-in-check-email-footer">
+    <footer class="section-sign-you-are-invited-footer">
         <p>Copyright © 2020 Palautejärjestelmä Oy</p>
         <div class="options">
             <a href="#" class="active">Privacy Policy</a>

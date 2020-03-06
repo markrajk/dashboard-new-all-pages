@@ -3873,6 +3873,7 @@ main {
     }
 
     & .input-container {
+      margin-bottom: 2.2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -3919,22 +3920,6 @@ main {
       background-color: #8E8D8E;
     }
 
-    // & input {
-    //   outline:none;
-    //   font-family: "Heebo-Medium";
-    //   color: #616061;
-    //   //border-radius: 9px;
-    //   border: 1px solid #B7B7B7;
-
-    //   &::placeholder {
-    //     color: rgba($color: #616061, $alpha: .7);
-    //   }
-
-    //   &:focus {
-    //     box-shadow: 0 0 4px 4px rgba($color: #bde1f1, $alpha: .46);
-    //   }
-    // }
-
     & .img-container  {
       width: 100%;
       text-align: center;
@@ -3980,6 +3965,197 @@ main {
 }
 //=============================================
 //SECTION SIGN IN CHECK EMAIL END
+//=============================================
+
+
+
+//=============================================
+//SECTION SIGN YOU ARE INVITED  START
+//=============================================
+.section-sign-you-are-invited {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem);
+  min-height: 43rem;
+
+  &-header {
+
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    padding: 4.9rem 4.1rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+
+    & h2 {
+      margin-bottom: .6rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000;
+    }
+
+    & .sub-text {
+      margin-bottom: 6rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #414141;
+    }
+
+  }
+
+  & .team-card {
+    margin-bottom: 4rem;
+    padding: 1.4rem 1.6rem;
+    display: flex;
+    align-items: center;
+    height: 6.8rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & .team-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.6rem;
+      height: 3.6rem;
+      opacity: 0.64;
+      border-radius: 4px;
+      background-color: #ff0a00;
+
+      & span {
+        font-family: "Heebo-Regular";
+        font-size: 2.05rem;
+        color: #FFF;
+      }
+    }
+
+    & .team-info {
+      margin-bottom: -.2rem;
+      margin-left: 1.6rem;
+      display: flex;
+      flex-direction: column ;
+      align-items: center ;
+      & .team-name {
+        margin-bottom: 0;
+        font-family: "Heebo-Medium";
+        font-size: 1.65rem;
+        color: #000000;
+      }
+
+      & .team-inviter {
+        margin-top: -.1rem;
+        margin-bottom: 0;
+        font-family: "Heebo-Regular";
+        font-size: 1.2rem;
+        letter-spacing: 0.18px;
+        color: #5f5f5f;
+
+        & span {
+          font-family: "Heebo-Medium";
+        }
+      }
+    }
+
+    & .btn-custom-signin {
+      margin-left: auto;
+      text-decoration: none;
+      padding: .5rem 2.4rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+
+  & .bottom-text {
+    margin-bottom: 4.6rem;
+    font-family: "Heebo-Regular";
+    font-size: 1.4rem;
+    color: #414141;
+    text-align: center;
+  }
+
+
+
+  &-footer {
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN YOU ARE INVITED END
 //=============================================
 
 
