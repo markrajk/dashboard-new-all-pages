@@ -228,8 +228,8 @@ header {
 
     &-center {
       position: absolute;
-      top: 50%;
-      left: calc(50% + .5rem);
+      top: calc(50% + .15rem);
+      left: calc(50% + .65rem);
       transform: translate(-50%, -50%);
       font-size: 2.2rem;
 
