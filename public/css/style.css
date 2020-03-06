@@ -104,7 +104,8 @@ header {
     padding: 0;
     padding-top: 4rem;
     border-bottom: 1.25px solid #e4e4e4;
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
     header .header-links ul {
       padding: 0;
       margin: 0;
@@ -141,34 +142,75 @@ header {
             width: 100%;
             transform: translate(0, 100%);
             background-color: #fd2851; }
-    header .header-links-btn, header .header-links-btn:hover, header .header-links-btn:link {
-      position: absolute;
+    header .header-links-btn-new, header .header-links-btn-new:hover, header .header-links-btn-new:link {
       font-family: "Heebo-Medium";
-      padding: 5px 12px;
+      text-decoration: none;
+      margin-left: auto;
+      display: flex;
+      width: calc(300px / 4);
+      height: calc(100px / 4);
+      align-items: center;
+      justify-content: center;
+      font-size: calc(50px/4);
+      letter-spacing: .2px;
+      border: none;
+      border-radius: calc(50px/4);
       background-color: red;
       color: #FFF;
-      font-size: 10.5px;
-      letter-spacing: .2px;
-      text-decoration: none;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 14px; }
-      header .header-links-btn span, header .header-links-btn:hover span, header .header-links-btn:link span {
-        line-height: 10.5px;
-        padding: 5px 0; }
-      header .header-links-btn.header-links-btn-blue, header .header-links-btn:hover.header-links-btn-blue, header .header-links-btn:link.header-links-btn-blue {
+      /* padding: 15px 60px; */
+      border: none; }
+      header .header-links-btn-new span, header .header-links-btn-new:hover span, header .header-links-btn-new:link span {
+        margin-right: 5px; }
+      header .header-links-btn-new.header-links-btn-blue, header .header-links-btn-new:hover.header-links-btn-blue, header .header-links-btn-new:link.header-links-btn-blue {
         background-color: #1477fc; }
-      header .header-links-btn svg, header .header-links-btn:hover svg, header .header-links-btn:link svg {
+      header .header-links-btn-new svg, header .header-links-btn-new:hover svg, header .header-links-btn-new:link svg {
         width: 16px;
         height: 16px; }
-        header .header-links-btn svg .cls-1, header .header-links-btn svg .cls-2, header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-1, header .header-links-btn:hover svg .cls-2, header .header-links-btn:hover svg .cls-4, header .header-links-btn:link svg .cls-1, header .header-links-btn:link svg .cls-2, header .header-links-btn:link svg .cls-4 {
+        header .header-links-btn-new svg .cls-1, header .header-links-btn-new svg .cls-2, header .header-links-btn-new svg .cls-4, header .header-links-btn-new:hover svg .cls-1, header .header-links-btn-new:hover svg .cls-2, header .header-links-btn-new:hover svg .cls-4, header .header-links-btn-new:link svg .cls-1, header .header-links-btn-new:link svg .cls-2, header .header-links-btn-new:link svg .cls-4 {
           fill: none; }
-        header .header-links-btn svg .cls-1, header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-1, header .header-links-btn:hover svg .cls-2, header .header-links-btn:link svg .cls-1, header .header-links-btn:link svg .cls-2 {
+        header .header-links-btn-new svg .cls-1, header .header-links-btn-new svg .cls-2, header .header-links-btn-new:hover svg .cls-1, header .header-links-btn-new:hover svg .cls-2, header .header-links-btn-new:link svg .cls-1, header .header-links-btn-new:link svg .cls-2 {
           stroke: #fff; }
-        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-2, header .header-links-btn:link svg .cls-2 {
+        header .header-links-btn-new svg .cls-2, header .header-links-btn-new:hover svg .cls-2, header .header-links-btn-new:link svg .cls-2 {
           stroke-linecap: round;
           stroke-width: 1.5px; }
-        header .header-links-btn svg .cls-3, header .header-links-btn:hover svg .cls-3, header .header-links-btn:link svg .cls-3 {
+        header .header-links-btn-new svg .cls-3, header .header-links-btn-new:hover svg .cls-3, header .header-links-btn-new:link svg .cls-3 {
+          stroke: none; }
+    header .header-links-btn, header .header-links-btn:hover {
+      margin-top: -0.2rem;
+      font-family: "Heebo-Medium";
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      height: 2.9rem;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding: 0 1.45rem;
+      font-size: 1.235rem;
+      color: #fff;
+      border-radius: 14.1px;
+      background-color: #fd2851; }
+      header .header-links-btn.header-links-btn-blue, header .header-links-btn:hover.header-links-btn-blue {
+        background-color: #1477fc; }
+      header .header-links-btn svg, header .header-links-btn:hover svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-left: 0.3rem;
+        margin-top: -0.2rem; }
+        header .header-links-btn svg .cls-1,
+        header .header-links-btn svg .cls-2,
+        header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-1,
+        header .header-links-btn:hover svg .cls-2,
+        header .header-links-btn:hover svg .cls-4 {
+          fill: none; }
+        header .header-links-btn svg .cls-1,
+        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-1,
+        header .header-links-btn:hover svg .cls-2 {
+          stroke: #fff; }
+        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-2 {
+          stroke-linecap: round;
+          stroke-width: 0.15rem; }
+        header .header-links-btn svg .cls-3, header .header-links-btn:hover svg .cls-3 {
           stroke: none; }
 
 main {
