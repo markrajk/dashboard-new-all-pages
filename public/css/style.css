@@ -77,6 +77,10 @@ header {
           height: 2px;
           background-color: #fd2851; }
     header .navbar-center {
+      position: absolute;
+      top: 50%;
+      left: calc(50% + .5rem);
+      transform: translate(-50%, -50%);
       font-size: 2.2rem; }
       header .navbar-center img {
         margin-top: -0.35rem;
