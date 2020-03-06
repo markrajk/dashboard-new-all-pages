@@ -1890,7 +1890,6 @@ main {
     .section-user-settings .modal-header .modal-title {
       font-family: "Heebo-Bold";
       font-size: 1.6rem;
-      letter-spacing: .1px;
       color: #202124; }
     .section-user-settings .modal-header i {
       font-size: 2.5rem;
@@ -1902,6 +1901,7 @@ main {
       display: block;
       font-family: "Heebo-Bold";
       font-size: 1.1rem;
+      letter-spacing: 0.26px;
       color: #202124; }
     .section-user-settings .modal-body input {
       width: 100%;
@@ -1923,7 +1923,7 @@ main {
       width: 100%;
       font-family: "Heebo-Medium";
       font-size: 1.5rem;
-      letter-spacing: .1px;
+      letter-spacing: 0.16px;
       color: #FFF;
       background-color: #2F75EC;
       border: none;

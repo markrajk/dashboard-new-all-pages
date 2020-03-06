@@ -2896,7 +2896,6 @@ main {
       & .modal-title {
         font-family: "Heebo-Bold";
         font-size: 1.6rem;
-        letter-spacing: .1px;
         color: #202124;
       }
 
@@ -2914,6 +2913,7 @@ main {
         display: block;
         font-family: "Heebo-Bold";
         font-size: 1.1rem;
+        letter-spacing: 0.26px;
         color: #202124;
       }
 
@@ -2941,7 +2941,7 @@ main {
         width: 100%;
         font-family: "Heebo-Medium";
         font-size: 1.5rem;
-        letter-spacing: .1px;
+        letter-spacing: 0.16px;
         color: #FFF;
         background-color: #2F75EC;
         border: none;
