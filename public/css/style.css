@@ -141,43 +141,38 @@ header {
             width: 100%;
             transform: translate(0, 100%);
             background-color: #fd2851; }
-    header .header-links-btn, header .header-links-btn:hover {
-      margin-top: -0.2rem;
+    header .header-links-btn, header .header-links-btn:hover, header .header-links-btn:link {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding: 0px;
+      padding: 0 1.45rem;
       font-family: "Heebo-Medium";
       text-transform: uppercase;
       text-decoration: none;
       white-space: nowrap;
       height: 2.9rem;
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      padding: 0 1.45rem;
-      font-size: 1.235rem;
+      font-size: 1.05rem;
+      letter-spacing: .2px;
       color: #fff;
-      border-radius: 14.1px;
+      border-radius: 14px;
       background-color: #fd2851; }
-      header .header-links-btn.header-links-btn-blue, header .header-links-btn:hover.header-links-btn-blue {
+      header .header-links-btn.header-links-btn-blue, header .header-links-btn:hover.header-links-btn-blue, header .header-links-btn:link.header-links-btn-blue {
         background-color: #1477fc; }
-      header .header-links-btn svg, header .header-links-btn:hover svg {
-        width: 1.6rem;
-        height: 1.6rem;
+      header .header-links-btn svg, header .header-links-btn:hover svg, header .header-links-btn:link svg {
         margin-left: 0.3rem;
-        margin-top: -0.2rem; }
-        header .header-links-btn svg .cls-1,
-        header .header-links-btn svg .cls-2,
-        header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-1,
-        header .header-links-btn:hover svg .cls-2,
-        header .header-links-btn:hover svg .cls-4 {
+        width: 1.6rem;
+        height: 1.6rem; }
+        header .header-links-btn svg .cls-1, header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-1, header .header-links-btn:hover svg .cls-2, header .header-links-btn:link svg .cls-1, header .header-links-btn:link svg .cls-2 {
           fill: none; }
-        header .header-links-btn svg .cls-1,
-        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-1,
-        header .header-links-btn:hover svg .cls-2 {
-          stroke: #fff; }
-        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-2 {
+        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-2, header .header-links-btn:link svg .cls-2 {
+          stroke: #fff;
           stroke-linecap: round;
-          stroke-width: 0.15rem; }
-        header .header-links-btn svg .cls-3, header .header-links-btn:hover svg .cls-3 {
-          stroke: none; }
+          stroke-width: 1.35px; }
+        header .header-links-btn svg .cls-3, header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-3, header .header-links-btn:hover svg .cls-4, header .header-links-btn:link svg .cls-3, header .header-links-btn:link svg .cls-4 {
+          stroke: #fff; }
+        header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-4, header .header-links-btn:link svg .cls-4 {
+          fill: none; }
 
 main {
   height: 100% s;
@@ -2002,8 +1997,6 @@ main {
       font-size: 1.5rem;
       letter-spacing: 0.38px;
       color: #1477fc; }
-      .section-example-team-header .custom-dd-link i {
-        margin-top: -.1rem; }
       .section-example-team-header .custom-dd-link .search {
         margin-right: .5rem;
         font-size: 3rem; }
