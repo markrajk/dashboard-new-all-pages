@@ -142,40 +142,6 @@ header {
             width: 100%;
             transform: translate(0, 100%);
             background-color: #fd2851; }
-    header .header-links-btn-new, header .header-links-btn-new:hover, header .header-links-btn-new:link {
-      font-family: "Heebo-Medium";
-      text-decoration: none;
-      margin-left: auto;
-      display: flex;
-      width: calc(300px / 4);
-      height: calc(100px / 4);
-      align-items: center;
-      justify-content: center;
-      font-size: calc(50px/4);
-      letter-spacing: .2px;
-      border: none;
-      border-radius: calc(50px/4);
-      background-color: red;
-      color: #FFF;
-      text-transform: uppercase;
-      /* padding: 15px 60px; */
-      border: none; }
-      header .header-links-btn-new span, header .header-links-btn-new:hover span, header .header-links-btn-new:link span {
-        margin-right: 5px; }
-      header .header-links-btn-new.header-links-btn-blue, header .header-links-btn-new:hover.header-links-btn-blue, header .header-links-btn-new:link.header-links-btn-blue {
-        background-color: #1477fc; }
-      header .header-links-btn-new svg, header .header-links-btn-new:hover svg, header .header-links-btn-new:link svg {
-        width: 16px;
-        height: 16px; }
-        header .header-links-btn-new svg .cls-1, header .header-links-btn-new svg .cls-2, header .header-links-btn-new svg .cls-4, header .header-links-btn-new:hover svg .cls-1, header .header-links-btn-new:hover svg .cls-2, header .header-links-btn-new:hover svg .cls-4, header .header-links-btn-new:link svg .cls-1, header .header-links-btn-new:link svg .cls-2, header .header-links-btn-new:link svg .cls-4 {
-          fill: none; }
-        header .header-links-btn-new svg .cls-1, header .header-links-btn-new svg .cls-2, header .header-links-btn-new:hover svg .cls-1, header .header-links-btn-new:hover svg .cls-2, header .header-links-btn-new:link svg .cls-1, header .header-links-btn-new:link svg .cls-2 {
-          stroke: #fff; }
-        header .header-links-btn-new svg .cls-2, header .header-links-btn-new:hover svg .cls-2, header .header-links-btn-new:link svg .cls-2 {
-          stroke-linecap: round;
-          stroke-width: 1.5px; }
-        header .header-links-btn-new svg .cls-3, header .header-links-btn-new:hover svg .cls-3, header .header-links-btn-new:link svg .cls-3 {
-          stroke: none; }
     header .header-links-btn, header .header-links-btn:hover {
       margin-top: -0.2rem;
       font-family: "Heebo-Medium";

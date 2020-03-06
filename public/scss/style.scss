@@ -315,58 +315,58 @@ header {
       }
     }
 
-    &-btn-new,
-    &-btn-new:hover, 
-    &-btn-new:link {
-      font-family: "Heebo-Medium";
-      text-decoration: none;
-      margin-left: auto;
-      display: flex;
-      width: calc(300px / 4);
-      height: calc(100px / 4);
-      align-items: center;
-      justify-content: center;
-      font-size: calc(50px/4);
-      letter-spacing: .2px;
-      border: none;
-      border-radius: calc(50px/4);
-      background-color: red;
-      color: #FFF;
-      text-transform: uppercase;
-      /* padding: 15px 60px; */
-      border: none;
+    // &-btn-new,
+    // &-btn-new:hover, 
+    // &-btn-new:link {
+    //   font-family: "Heebo-Medium";
+    //   text-decoration: none;
+    //   margin-left: auto;
+    //   display: flex;
+    //   width: calc(300px / 4);
+    //   height: calc(100px / 4);
+    //   align-items: center;
+    //   justify-content: center;
+    //   font-size: calc(50px/4);
+    //   letter-spacing: .2px;
+    //   border: none;
+    //   border-radius: calc(50px/4);
+    //   background-color: red;
+    //   color: #FFF;
+    //   text-transform: uppercase;
+    //   /* padding: 15px 60px; */
+    //   border: none;
 
-      span {
-        margin-right: 5px;
-      }
+    //   span {
+    //     margin-right: 5px;
+    //   }
 
-      &.header-links-btn-blue {
-        background-color: #1477fc;
-      }
+    //   &.header-links-btn-blue {
+    //     background-color: #1477fc;
+    //   }
 
-      & svg {
-        //margin-left: 5px;
-        width: 16px;
-        height: 16px;
+    //   & svg {
+    //     //margin-left: 5px;
+    //     width: 16px;
+    //     height: 16px;
 
-        .cls-1, .cls-2, .cls-4 {
-          fill: none;
-        }
+    //     .cls-1, .cls-2, .cls-4 {
+    //       fill: none;
+    //     }
   
-        .cls-1, .cls-2 {
-          stroke: #fff;
-        }
+    //     .cls-1, .cls-2 {
+    //       stroke: #fff;
+    //     }
   
-        .cls-2 {
-          stroke-linecap: round;
-          stroke-width: 1.5px;
-        }
+    //     .cls-2 {
+    //       stroke-linecap: round;
+    //       stroke-width: 1.5px;
+    //     }
   
-        .cls-3 {
-          stroke: none;
-        }
-      }
-    }
+    //     .cls-3 {
+    //       stroke: none;
+    //     }
+    //   }
+    // }
 
     &-btn,
     &-btn:hover {
