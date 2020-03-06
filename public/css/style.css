@@ -103,8 +103,8 @@ header {
     background-color: #fdfdfd !important;
     padding: 0;
     padding-top: 4rem;
-    display: flex;
-    border-bottom: 1.25px solid #e4e4e4; }
+    border-bottom: 1.25px solid #e4e4e4;
+    display: flex; }
     header .header-links ul {
       padding: 0;
       margin: 0;
@@ -142,37 +142,34 @@ header {
             transform: translate(0, 100%);
             background-color: #fd2851; }
     header .header-links-btn, header .header-links-btn:hover, header .header-links-btn:link {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      padding: 0px;
-      padding: 0 1.45rem;
+      position: absolute;
       font-family: "Heebo-Medium";
-      text-transform: uppercase;
-      text-decoration: none;
-      white-space: nowrap;
-      height: 2.9rem;
-      font-size: 1.05rem;
+      padding: 5px 12px;
+      background-color: red;
+      color: #FFF;
+      font-size: 10.5px;
       letter-spacing: .2px;
-      color: #fff;
-      border-radius: 14px;
-      background-color: #fd2851; }
+      text-decoration: none;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 14px; }
+      header .header-links-btn span, header .header-links-btn:hover span, header .header-links-btn:link span {
+        line-height: 10.5px;
+        padding: 5px 0; }
       header .header-links-btn.header-links-btn-blue, header .header-links-btn:hover.header-links-btn-blue, header .header-links-btn:link.header-links-btn-blue {
         background-color: #1477fc; }
       header .header-links-btn svg, header .header-links-btn:hover svg, header .header-links-btn:link svg {
-        margin-left: 0.3rem;
-        width: 1.6rem;
-        height: 1.6rem; }
+        width: 16px;
+        height: 16px; }
+        header .header-links-btn svg .cls-1, header .header-links-btn svg .cls-2, header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-1, header .header-links-btn:hover svg .cls-2, header .header-links-btn:hover svg .cls-4, header .header-links-btn:link svg .cls-1, header .header-links-btn:link svg .cls-2, header .header-links-btn:link svg .cls-4 {
+          fill: none; }
         header .header-links-btn svg .cls-1, header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-1, header .header-links-btn:hover svg .cls-2, header .header-links-btn:link svg .cls-1, header .header-links-btn:link svg .cls-2 {
-          fill: none; }
-        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-2, header .header-links-btn:link svg .cls-2 {
-          stroke: #fff;
-          stroke-linecap: round;
-          stroke-width: 1.35px; }
-        header .header-links-btn svg .cls-3, header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-3, header .header-links-btn:hover svg .cls-4, header .header-links-btn:link svg .cls-3, header .header-links-btn:link svg .cls-4 {
           stroke: #fff; }
-        header .header-links-btn svg .cls-4, header .header-links-btn:hover svg .cls-4, header .header-links-btn:link svg .cls-4 {
-          fill: none; }
+        header .header-links-btn svg .cls-2, header .header-links-btn:hover svg .cls-2, header .header-links-btn:link svg .cls-2 {
+          stroke-linecap: round;
+          stroke-width: 1.5px; }
+        header .header-links-btn svg .cls-3, header .header-links-btn:hover svg .cls-3, header .header-links-btn:link svg .cls-3 {
+          stroke: none; }
 
 main {
   height: 100% s;
