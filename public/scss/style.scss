@@ -162,15 +162,15 @@ html {
   }
 
   @include respond(desktop-xl) {
-    font-size: 55%;
+    font-size: 56%;
   }
 
   @include respond(desktop-lgxl) {
-    font-size: 55%;
+    font-size: 56%;
   }
 
   @include respond(desktop-lg) {
-    font-size: 55%;
+    font-size: 56%;
   }
   
   @include respond(desktop-md) {
@@ -329,7 +329,8 @@ header {
       padding: .5rem 1.45rem;
       //padding: 0.5rem 1.4rem;
       //font-size: 1.235rem;
-      font-size: 1.235rem;
+      font-size: 1.3rem;
+      letter-spacing: .2px;
 
       color: #fff;
       border-radius: 14.1px;
@@ -545,6 +546,7 @@ main {
       & svg {
         width: 3.2775rem;
         height: 3.311rem;
+        cursor: pointer;
         .cls-1 {
           fill: #fff;
           stroke: #1477fc;
@@ -706,7 +708,7 @@ main {
       &-top {
         display: flex;
         padding: 0 1.6rem;
-        margin: 0 0.4rem;
+        //margin: 0 0.4rem;
         padding-top: 2.4rem;
         padding-bottom: 3rem;
         border-top: solid 1.25px #f1f1f3;
@@ -715,9 +717,16 @@ main {
   
         &-second,
         &-first {
-          margin-right: 0.5rem;
+          //margin-right: 0.5rem;
+          padding-left: .53rem;
+          width: 50%;
 
           
+        }
+
+        &-second {
+          width: auto;
+         padding-left: 2rem;
         }
   
         & h3 {
@@ -744,6 +753,7 @@ main {
             color: #fff;
             padding: 0.3rem 1rem;
             border-radius: 2.2rem;
+            letter-spacing: .5px;
             //background-color: red;
   
             &.plus {
@@ -760,12 +770,28 @@ main {
       &-6,
       &-12 {
         padding: 1.7rem 1.6rem;
-        margin: 0 0.4rem;
+        margin: 0;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         border-bottom: solid 1.25px #f1f1f3;
+
+        & .icon {
+          padding: .8rem 1rem;
+          padding: .78rem .95rem .83rem 1rem;
+          border-radius: 6px;
+          border: 1.25px solid rgba($color: #707070, $alpha: .04);
+          & svg {
+            width: 2.0454rem;
+            height: 2.3893rem;
+
+            .cls-1 {
+              fill: #fff;
+            }
+          }
+        }
+
         & p {
+          margin-left: 1.6rem;
           margin-bottom: 0;
           font-family: "Heebo-Bold";
           font-size: 1.45rem;
@@ -779,6 +805,7 @@ main {
         }
   
         & a {
+          margin-left: auto;
           text-decoration: none;
           font-family: "Heebo-Bold";
           padding: 0.5rem 1.7rem;
@@ -790,6 +817,14 @@ main {
           background-color: #efeff4;
         }
       }
+
+      &-6 .icon {
+        background-color: #FED831;
+      }
+
+      &-12 .icon {
+        background-color: #feaf31;
+      }
   
       &-text {
         margin-left: 1rem;
@@ -799,6 +834,82 @@ main {
         font-family: "Heebo-Regular";
         font-size: 1.2rem;
         color: #777779;
+      }
+    }
+  }
+
+  & .modal {
+
+    &-dialog {
+      width: 34.5rem;
+    }
+
+    &-content {
+      border-radius: 8px;
+      //border: solid 1px #f5f5f5;
+      border: none;
+    }
+
+    &-header {
+      padding: 1.7rem 2.3rem;
+      padding-right: 2.8rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #EDEDED;
+      & .modal-title {
+        font-family: "Heebo-Bold";
+        font-size: 1.75rem;
+        color: #202124;
+      }
+
+      & i {
+        font-size: 2.5rem;
+        color: #D4D3D3;
+      }
+    }
+
+    &-body {
+      padding: 0 4rem;
+
+      & label {
+        margin-top: 2.3rem;
+        display: block;
+        font-family: "Heebo-Bold";
+        font-size: 1.2rem;
+        letter-spacing: 0.26px;
+        color: #202124;
+      }
+
+      & input {
+        width: 100%;
+        padding: 1.1rem 1.9rem;
+        font-family: "Heebo-Regular";
+        font-size: 1.38rem;
+        height: 4.2rem;
+        background-color: #F6F6F6;
+        border: 1px solid #EDEDED;
+        border-radius: 6px;
+
+        &::placeholder {
+          color: #6e7076;
+          opacity: .3;
+        }
+      }
+
+      & .btn-custom-confirm {
+        margin-top: 2.6rem;
+        margin-bottom: 3.8rem;
+        display: inline-block;
+        padding: 1.25rem 0;
+        width: 100%;
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        letter-spacing: 0.16px;
+        color: #FFF;
+        background-color: #2F75EC;
+        border: none;
+        border-radius: 22px;
+        text-decoration: none;
+        text-align: center;
       }
     }
   }
@@ -1239,11 +1350,12 @@ main {
       justify-content: center;
       align-items: center;
       font-family: "Lato", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       width: 11.7rem;
       height: 2.8rem;
       border-radius: 4px;
       border: 1px solid #fff;
+      letter-spacing: .2px;
       
         
 
@@ -1251,7 +1363,7 @@ main {
         margin-top: -1.95rem;
         text-decoration: none;
         background-color: #fff;
-        font-weight: bold;
+        font-weight: 400;
         color: #000;
         margin-bottom: 1.1rem;
       }
@@ -1261,7 +1373,7 @@ main {
         text-decoration: none;
         background-color: rgba(0,0,0, .59);
         border-color: #FFF;
-        font-weight: bold;
+        font-weight: 400;
         color: #FFF;
       }
     }
@@ -1951,12 +2063,42 @@ main {
       border: none;
     
       & .card-header {
+        position: relative;
         padding: 1.7rem 3.3rem;
         padding-bottom: 1.5rem;
         border: solid 1px #f5f5f5;
         border-bottom: solid 1px #f5f5f5;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+
+        & svg {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(-100%, -50%);
+          width: 3.2775rem;
+          height: 3.311rem;
+          cursor: pointer;
+
+          .cls-1 {
+            fill: #fff;
+            stroke: #1477fc;
+            stroke-miterlimit: 10;
+            stroke-width: .175rem;
+          }
+    
+          .cls-2 {
+            fill: #1477fc;
+          }
+    
+          .cls-3 {
+            stroke: none;
+          }
+    
+          .cls-4 {
+            fill: none;
+          }
+        }
     
         & .search {
           margin-top: 1.9rem;
@@ -2116,14 +2258,14 @@ main {
           align-items: center;
           width: 8.5rem;
           height: 2.7rem;
-          font-size: 1.22rem;
-          color: #1477fc;
+          font-size: 1.25rem;
+          color: #009afa;
           text-transform: capitalize;
-          border: solid 1.3px #1477fc;
+          border: solid 1.3px #009afa;
           border-radius: 13px;
+          letter-spacing: .2px;
 
           
-
           & span {
             line-height: .8;
             margin-top: .1rem;
@@ -2157,7 +2299,7 @@ main {
           }
 
           &-selected {
-            background-color: #1477fc;
+            background-color: #009afa;
             color: #fff;
           }
         }
@@ -2306,6 +2448,82 @@ main {
           color: #ffffff;
           text-align: center;
         }
+      }
+    }
+  }
+
+  & .modal {
+
+    &-dialog {
+      width: 34.5rem;
+    }
+
+    &-content {
+      border-radius: 8px;
+      //border: solid 1px #f5f5f5;
+      border: none;
+    }
+
+    &-header {
+      padding: 1.7rem 2.3rem;
+      padding-right: 2.8rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #EDEDED;
+      & .modal-title {
+        font-family: "Heebo-Bold";
+        font-size: 1.75rem;
+        color: #202124;
+      }
+
+      & i {
+        font-size: 2.5rem;
+        color: #D4D3D3;
+      }
+    }
+
+    &-body {
+      padding: 0 4rem;
+
+      & label {
+        margin-top: 2.3rem;
+        display: block;
+        font-family: "Heebo-Bold";
+        font-size: 1.2rem;
+        letter-spacing: 0.26px;
+        color: #202124;
+      }
+
+      & input {
+        width: 100%;
+        padding: 1.1rem 1.9rem;
+        font-family: "Heebo-Regular";
+        font-size: 1.38rem;
+        height: 4.2rem;
+        background-color: #F6F6F6;
+        border: 1px solid #EDEDED;
+        border-radius: 6px;
+
+        &::placeholder {
+          color: #6e7076;
+          opacity: .3;
+        }
+      }
+
+      & .btn-custom-confirm {
+        margin-top: 2.6rem;
+        margin-bottom: 3.8rem;
+        display: inline-block;
+        padding: 1.25rem 0;
+        width: 100%;
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        letter-spacing: 0.16px;
+        color: #FFF;
+        background-color: #2F75EC;
+        border: none;
+        border-radius: 22px;
+        text-decoration: none;
+        text-align: center;
       }
     }
   }
@@ -3719,11 +3937,13 @@ main {
       font-family: "Heebo-Medium";
       font-size: 1.7rem;
       color: #616061;
-      border-radius: 9px;
+      border-radius: 5px;
       //background-color: rgba($color: #bde1f1, $alpha: .46);
       border: 1px solid #B7B7B7;
 
       &::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
         color: rgba($color: #616061, $alpha: .7);
       }
 
@@ -3743,7 +3963,7 @@ main {
       background-color: #0093FF;
       text-align: center;
       border: none;
-      border-radius: 9px;
+      border-radius: 5px;
     }
 
     & .img-container  {
@@ -4157,6 +4377,886 @@ main {
 //=============================================
 //SECTION SIGN YOU ARE INVITED END
 //=============================================
+
+
+
+//=============================================
+//SECTION SIGN IN ENTER TEAM NAME  START
+//=============================================
+.section-sign-in-enter-your-team-name {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 36.6rem;
+
+  &-header {
+
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    
+    padding: 6rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 57.5rem;
+
+
+    & h2 {
+      margin-bottom: .4rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000;
+    }
+
+    & .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e;
+    }
+
+    & input {
+      margin-bottom: 1.6rem;
+      outline:none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      //background-color: rgba($color: #bde1f1, $alpha: .46);
+      border: 1px solid #B7B7B7;
+
+      &::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba($color: #616061, $alpha: .7);
+      }
+
+      &:focus {
+        box-shadow: 0 0 4px 4px rgba($color: #bde1f1, $alpha: .46);
+      }
+    }
+
+    & .btn-custom-signin {
+      text-decoration: none;
+      margin-bottom: 3.1rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+    }
+
+    & .img-container  {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center;
+      & img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem;
+      }
+    }
+  }
+
+  &-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN IN ENTER TEAM NAME END
+//=============================================
+
+
+
+//=============================================
+//SECTION SIGN IN WHO TO INVITE  START
+//=============================================
+.section-sign-in-who-to-invite {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 55.6rem;
+
+  &-header {
+
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    
+    padding: 4.9rem 4.1rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 57.5rem;
+
+
+    & h2 {
+      margin-bottom: 4.6rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000;
+    }
+
+    & .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e;
+    }
+
+    & input {
+      margin-bottom: 1.6rem;
+      outline:none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      //background-color: rgba($color: #bde1f1, $alpha: .46);
+      border: 1px solid #B7B7B7;
+
+      &::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba($color: #616061, $alpha: .7);
+      }
+
+      &:focus {
+        box-shadow: 0 0 4px 4px rgba($color: #bde1f1, $alpha: .46);
+      }
+    }
+
+    & .btn-custom-signin {
+      text-decoration: none;
+      margin-bottom: 3.1rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+    }
+
+    & .img-container  {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center;
+      & img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem;
+      }
+    }
+  }
+
+  &-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN IN WHO TO INVITE END
+//=============================================
+
+//=============================================
+//SECTION SIGN ENTER YOUR INFORMATION  START
+//=============================================
+.section-sign-in-enter-your-information {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 55.6rem;
+
+  &-header {
+
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    
+    padding: 4.1rem;
+    padding-top: 4.9rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 53.4rem;
+
+
+    & h2 {
+      margin-bottom: 2.1rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000;
+    }
+
+    & .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e;
+    }
+
+    & label {
+      margin-bottom: .3rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.15px;
+      text-align: left;
+      color: #000000;
+    }
+
+    & input {
+      margin-bottom: 2.8rem;
+      outline:none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      //background-color: rgba($color: #bde1f1, $alpha: .46);
+      border: 1px solid #B7B7B7;
+
+      &::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba($color: #616061, $alpha: .7);
+      }
+
+      &:focus {
+        box-shadow: 0 0 4px 4px rgba($color: #bde1f1, $alpha: .46);
+      }
+    }
+
+    & .btn-custom-signin {
+      margin-top: 1rem;
+      text-decoration: none;
+      //margin-bottom: 3.1rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+    }
+
+    & .img-container  {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center;
+      & img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem;
+      }
+    }
+  }
+
+  &-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN ENTER YOUR INFORMATION END
+//=============================================
+
+
+
+//=============================================
+//SECTION SIGN CHANGE PASSWORD  START
+//=============================================
+.section-sign-in-change-password {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 45.6rem;
+
+  &-header {
+
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    
+    padding: 4.1rem;
+    padding-top: 4.9rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%;
+    //max-height: 43rem;
+
+
+    & h2 {
+      margin-bottom: 2.1rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000;
+    }
+
+    & .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e;
+    }
+
+    & label {
+      margin-bottom: .3rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.15px;
+      text-align: left;
+      color: #000000;
+    }
+
+    & input {
+      margin-bottom: 2.8rem;
+      outline:none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      //background-color: rgba($color: #bde1f1, $alpha: .46);
+      border: 1px solid #B7B7B7;
+
+      &::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba($color: #616061, $alpha: .7);
+      }
+
+      &:focus {
+        box-shadow: 0 0 4px 4px rgba($color: #bde1f1, $alpha: .46);
+      }
+    }
+
+    & .btn-custom-signin {
+      margin-top: 1rem;
+      text-decoration: none;
+      //margin-bottom: 3.1rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+    }
+
+    & .img-container  {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center;
+      & img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem;
+      }
+    }
+  }
+
+  &-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN CHANGE PASSWORD END
+//=============================================
+
+
+
+//=============================================
+//SECTION LOGIN  START
+//=============================================
+.section-login {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 58.2rem;
+
+  &-header {
+
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    
+    padding: 4.1rem;
+    padding-top: 4.9rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    //height: 100%;
+    //max-height: 43rem;
+
+    & .stay {
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+
+      & .pretty {
+        margin-top: -.3rem;
+      }
+
+      & p {
+        margin-bottom: 0;
+        font-family: "Heebo-Regular";
+        font-size: 1.45rem;
+        color: #3e3e3e;
+      }
+
+      & a {
+        margin-left: auto;
+        font-family: "Heebo-Medium";
+        font-size: 1.4rem;
+        color: #0093ff;
+      }
+    }
+
+
+    & h2 {
+      margin-bottom: 2.1rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000;
+    }
+
+    & .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e;
+    }
+
+    & label.regular {
+      margin-bottom: .3rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.15px;
+      text-align: left;
+      color: #000000;
+    }
+
+    & input.regular {
+      margin-bottom: 2.8rem;
+      outline:none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      //background-color: rgba($color: #bde1f1, $alpha: .46);
+      border: 1px solid #B7B7B7;
+
+      &::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba($color: #616061, $alpha: .7);
+      }
+
+      &:focus {
+        box-shadow: 0 0 4px 4px rgba($color: #bde1f1, $alpha: .46);
+      }
+    }
+
+    & .btn-custom-signin {
+      margin-top: 1rem;
+      text-decoration: none;
+      //margin-bottom: 3.1rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+    }
+
+    & .bottom-text {
+      margin-top: 5.1rem;
+      margin-bottom: 6rem;
+      text-align: center;
+      font-family: "Heebo-Regular";
+      font-size: 1.45rem;
+      color: #202124;
+
+      & a {
+        margin-left: 1.4rem;
+        font-family: "Heebo-Bold";
+        color: #0093FF;
+      }
+    }
+  }
+
+  &-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN CHANGE PASSWORD END
+//=============================================
+
 
 
 

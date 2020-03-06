@@ -31,13 +31,13 @@ html {
       font-size: 58%; } }
   @media (max-width: 1500px) {
     html {
-      font-size: 55%; } }
+      font-size: 56%; } }
   @media (max-width: 1400px) {
     html {
-      font-size: 55%; } }
+      font-size: 56%; } }
   @media (max-width: 1199px) {
     html {
-      font-size: 55%; } }
+      font-size: 56%; } }
   @media (max-width: 991px) {
     html {
       font-size: 48%; } }
@@ -153,7 +153,8 @@ header {
       align-items: center;
       margin-left: auto;
       padding: .5rem 1.45rem;
-      font-size: 1.235rem;
+      font-size: 1.3rem;
+      letter-spacing: .2px;
       color: #fff;
       border-radius: 14.1px;
       background-color: #fd2851; }
@@ -302,7 +303,8 @@ main {
         letter-spacing: 0.24px; }
       .section-my-team .people .card-header svg {
         width: 3.2775rem;
-        height: 3.311rem; }
+        height: 3.311rem;
+        cursor: pointer; }
         .section-my-team .people .card-header svg .cls-1 {
           fill: #fff;
           stroke: #1477fc;
@@ -416,14 +418,17 @@ main {
       .section-my-team .overview-bottom-top {
         display: flex;
         padding: 0 1.6rem;
-        margin: 0 0.4rem;
         padding-top: 2.4rem;
         padding-bottom: 3rem;
         border-top: solid 1.25px #f1f1f3;
         border-bottom: solid 1.25px #f1f1f3;
         justify-content: space-between; }
         .section-my-team .overview-bottom-top-second, .section-my-team .overview-bottom-top-first {
-          margin-right: 0.5rem; }
+          padding-left: .53rem;
+          width: 50%; }
+        .section-my-team .overview-bottom-top-second {
+          width: auto;
+          padding-left: 2rem; }
         .section-my-team .overview-bottom-top h3 {
           margin: 0;
           margin-bottom: 0.5rem;
@@ -444,19 +449,30 @@ main {
             font-size: 1.1rem;
             color: #fff;
             padding: 0.3rem 1rem;
-            border-radius: 2.2rem; }
+            border-radius: 2.2rem;
+            letter-spacing: .5px; }
             .section-my-team .overview-bottom-top p span.plus {
               background-color: #2eea4e; }
             .section-my-team .overview-bottom-top p span.minus {
               background-color: #fb2133; }
       .section-my-team .overview-bottom-6, .section-my-team .overview-bottom-12 {
         padding: 1.7rem 1.6rem;
-        margin: 0 0.4rem;
+        margin: 0;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         border-bottom: solid 1.25px #f1f1f3; }
+        .section-my-team .overview-bottom-6 .icon, .section-my-team .overview-bottom-12 .icon {
+          padding: .8rem 1rem;
+          padding: .78rem .95rem .83rem 1rem;
+          border-radius: 6px;
+          border: 1.25px solid rgba(112, 112, 112, 0.04); }
+          .section-my-team .overview-bottom-6 .icon svg, .section-my-team .overview-bottom-12 .icon svg {
+            width: 2.0454rem;
+            height: 2.3893rem; }
+            .section-my-team .overview-bottom-6 .icon svg .cls-1, .section-my-team .overview-bottom-12 .icon svg .cls-1 {
+              fill: #fff; }
         .section-my-team .overview-bottom-6 p, .section-my-team .overview-bottom-12 p {
+          margin-left: 1.6rem;
           margin-bottom: 0;
           font-family: "Heebo-Bold";
           font-size: 1.45rem; }
@@ -466,6 +482,7 @@ main {
             font-size: 1.2rem;
             color: #8a8a8e; }
         .section-my-team .overview-bottom-6 a, .section-my-team .overview-bottom-12 a {
+          margin-left: auto;
           text-decoration: none;
           font-family: "Heebo-Bold";
           padding: 0.5rem 1.7rem;
@@ -475,6 +492,10 @@ main {
           color: #007aff;
           border-radius: 17px;
           background-color: #efeff4; }
+      .section-my-team .overview-bottom-6 .icon {
+        background-color: #FED831; }
+      .section-my-team .overview-bottom-12 .icon {
+        background-color: #feaf31; }
       .section-my-team .overview-bottom-text {
         margin-left: 1rem;
         display: inline-block;
@@ -482,6 +503,59 @@ main {
         font-family: "Heebo-Regular";
         font-size: 1.2rem;
         color: #777779; }
+  .section-my-team .modal-dialog {
+    width: 34.5rem; }
+  .section-my-team .modal-content {
+    border-radius: 8px;
+    border: none; }
+  .section-my-team .modal-header {
+    padding: 1.7rem 2.3rem;
+    padding-right: 2.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #EDEDED; }
+    .section-my-team .modal-header .modal-title {
+      font-family: "Heebo-Bold";
+      font-size: 1.75rem;
+      color: #202124; }
+    .section-my-team .modal-header i {
+      font-size: 2.5rem;
+      color: #D4D3D3; }
+  .section-my-team .modal-body {
+    padding: 0 4rem; }
+    .section-my-team .modal-body label {
+      margin-top: 2.3rem;
+      display: block;
+      font-family: "Heebo-Bold";
+      font-size: 1.2rem;
+      letter-spacing: 0.26px;
+      color: #202124; }
+    .section-my-team .modal-body input {
+      width: 100%;
+      padding: 1.1rem 1.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.38rem;
+      height: 4.2rem;
+      background-color: #F6F6F6;
+      border: 1px solid #EDEDED;
+      border-radius: 6px; }
+      .section-my-team .modal-body input::placeholder {
+        color: #6e7076;
+        opacity: .3; }
+    .section-my-team .modal-body .btn-custom-confirm {
+      margin-top: 2.6rem;
+      margin-bottom: 3.8rem;
+      display: inline-block;
+      padding: 1.25rem 0;
+      width: 100%;
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      letter-spacing: 0.16px;
+      color: #FFF;
+      background-color: #2F75EC;
+      border: none;
+      border-radius: 22px;
+      text-decoration: none;
+      text-align: center; }
 
 .section-manage-other-teams {
   padding-top: 2.75rem;
@@ -765,16 +839,17 @@ main {
       justify-content: center;
       align-items: center;
       font-family: "Lato", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       width: 11.7rem;
       height: 2.8rem;
       border-radius: 4px;
-      border: 1px solid #fff; }
+      border: 1px solid #fff;
+      letter-spacing: .2px; }
       .section-manage-other-teams .graph-card .btn-hover-delete {
         margin-top: -1.95rem;
         text-decoration: none;
         background-color: #fff;
-        font-weight: bold;
+        font-weight: 400;
         color: #000;
         margin-bottom: 1.1rem; }
       .section-manage-other-teams .graph-card .btn-hover-cancel {
@@ -782,7 +857,7 @@ main {
         text-decoration: none;
         background-color: rgba(0, 0, 0, 0.59);
         border-color: #FFF;
-        font-weight: bold;
+        font-weight: 400;
         color: #FFF; }
     .section-manage-other-teams .graph-card-footer {
       height: 6rem;
@@ -1234,12 +1309,32 @@ main {
       height: 100% !important;
       border: none; }
       .section-give-feedback-main .people .card-header {
+        position: relative;
         padding: 1.7rem 3.3rem;
         padding-bottom: 1.5rem;
         border: solid 1px #f5f5f5;
         border-bottom: solid 1px #f5f5f5;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px; }
+        .section-give-feedback-main .people .card-header svg {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(-100%, -50%);
+          width: 3.2775rem;
+          height: 3.311rem;
+          cursor: pointer; }
+          .section-give-feedback-main .people .card-header svg .cls-1 {
+            fill: #fff;
+            stroke: #1477fc;
+            stroke-miterlimit: 10;
+            stroke-width: .175rem; }
+          .section-give-feedback-main .people .card-header svg .cls-2 {
+            fill: #1477fc; }
+          .section-give-feedback-main .people .card-header svg .cls-3 {
+            stroke: none; }
+          .section-give-feedback-main .people .card-header svg .cls-4 {
+            fill: none; }
         .section-give-feedback-main .people .card-header .search {
           margin-top: 1.9rem;
           display: block;
@@ -1366,11 +1461,12 @@ main {
           align-items: center;
           width: 8.5rem;
           height: 2.7rem;
-          font-size: 1.22rem;
-          color: #1477fc;
+          font-size: 1.25rem;
+          color: #009afa;
           text-transform: capitalize;
-          border: solid 1.3px #1477fc;
-          border-radius: 13px; }
+          border: solid 1.3px #009afa;
+          border-radius: 13px;
+          letter-spacing: .2px; }
           .section-give-feedback-main .people .list-group-item .btn-custom span {
             line-height: .8;
             margin-top: .1rem; }
@@ -1390,7 +1486,7 @@ main {
             .section-give-feedback-main .people .list-group-item .btn-custom svg .cls-3 {
               stroke: none; }
           .section-give-feedback-main .people .list-group-item .btn-custom-selected {
-            background-color: #1477fc;
+            background-color: #009afa;
             color: #fff; }
     .section-give-feedback-main .employee {
       padding: 1.7rem 3.3rem;
@@ -1496,6 +1592,59 @@ main {
           font-size: 1.3rem;
           color: #ffffff;
           text-align: center; }
+  .section-give-feedback .modal-dialog {
+    width: 34.5rem; }
+  .section-give-feedback .modal-content {
+    border-radius: 8px;
+    border: none; }
+  .section-give-feedback .modal-header {
+    padding: 1.7rem 2.3rem;
+    padding-right: 2.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #EDEDED; }
+    .section-give-feedback .modal-header .modal-title {
+      font-family: "Heebo-Bold";
+      font-size: 1.75rem;
+      color: #202124; }
+    .section-give-feedback .modal-header i {
+      font-size: 2.5rem;
+      color: #D4D3D3; }
+  .section-give-feedback .modal-body {
+    padding: 0 4rem; }
+    .section-give-feedback .modal-body label {
+      margin-top: 2.3rem;
+      display: block;
+      font-family: "Heebo-Bold";
+      font-size: 1.2rem;
+      letter-spacing: 0.26px;
+      color: #202124; }
+    .section-give-feedback .modal-body input {
+      width: 100%;
+      padding: 1.1rem 1.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.38rem;
+      height: 4.2rem;
+      background-color: #F6F6F6;
+      border: 1px solid #EDEDED;
+      border-radius: 6px; }
+      .section-give-feedback .modal-body input::placeholder {
+        color: #6e7076;
+        opacity: .3; }
+    .section-give-feedback .modal-body .btn-custom-confirm {
+      margin-top: 2.6rem;
+      margin-bottom: 3.8rem;
+      display: inline-block;
+      padding: 1.25rem 0;
+      width: 100%;
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      letter-spacing: 0.16px;
+      color: #FFF;
+      background-color: #2F75EC;
+      border: none;
+      border-radius: 22px;
+      text-decoration: none;
+      text-align: center; }
 
 .section-team-settings {
   background-color: #fff;
@@ -2462,9 +2611,11 @@ main {
       font-family: "Heebo-Medium";
       font-size: 1.7rem;
       color: #616061;
-      border-radius: 9px;
+      border-radius: 5px;
       border: 1px solid #B7B7B7; }
       .section-sign-in-enter-email-card input::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
         color: rgba(97, 96, 97, 0.7); }
       .section-sign-in-enter-email-card input:focus {
         box-shadow: 0 0 4px 4px rgba(189, 225, 241, 0.46); }
@@ -2479,7 +2630,7 @@ main {
       background-color: #0093FF;
       text-align: center;
       border: none;
-      border-radius: 9px; }
+      border-radius: 5px; }
     .section-sign-in-enter-email-card .img-container {
       margin-bottom: 5rem;
       width: 100%;
@@ -2763,6 +2914,626 @@ main {
       letter-spacing: -0.12px;
       color: #555555; }
       .section-sign-you-are-invited-footer .options .active, .section-sign-you-are-invited-footer .options a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555; }
+
+.section-sign-in-enter-your-team-name {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 36.6rem; }
+  .section-sign-in-enter-your-team-name-header nav {
+    padding-left: 1.2rem;
+    padding-right: 2.4rem;
+    height: 6.9rem;
+    background-color: #FFF;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #f2f2f2; }
+    .section-sign-in-enter-your-team-name-header nav .logo {
+      display: flex;
+      align-items: center; }
+      .section-sign-in-enter-your-team-name-header nav .logo h1 {
+        display: inline-block;
+        margin: 0; }
+    .section-sign-in-enter-your-team-name-header nav .btn-custom-sign-in-header {
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 8rem;
+      height: 3.6rem;
+      border-radius: 4px;
+      background-color: #0093ff;
+      color: #FFF; }
+  .section-sign-in-enter-your-team-name-card {
+    padding: 6rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 57.5rem; }
+    .section-sign-in-enter-your-team-name-card h2 {
+      margin-bottom: .4rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000; }
+    .section-sign-in-enter-your-team-name-card .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e; }
+    .section-sign-in-enter-your-team-name-card input {
+      margin-bottom: 1.6rem;
+      outline: none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      border: 1px solid #B7B7B7; }
+      .section-sign-in-enter-your-team-name-card input::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba(97, 96, 97, 0.7); }
+      .section-sign-in-enter-your-team-name-card input:focus {
+        box-shadow: 0 0 4px 4px rgba(189, 225, 241, 0.46); }
+    .section-sign-in-enter-your-team-name-card .btn-custom-signin {
+      text-decoration: none;
+      margin-bottom: 3.1rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px; }
+    .section-sign-in-enter-your-team-name-card .img-container {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center; }
+      .section-sign-in-enter-your-team-name-card .img-container img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem; }
+  .section-sign-in-enter-your-team-name-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-enter-your-team-name-footer p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757; }
+    .section-sign-in-enter-your-team-name-footer .options {
+      margin-left: 6.4rem;
+      margin-top: 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555; }
+      .section-sign-in-enter-your-team-name-footer .options .active, .section-sign-in-enter-your-team-name-footer .options a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555; }
+
+.section-sign-in-who-to-invite {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 55.6rem; }
+  .section-sign-in-who-to-invite-header nav {
+    padding-left: 1.2rem;
+    padding-right: 2.4rem;
+    height: 6.9rem;
+    background-color: #FFF;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #f2f2f2; }
+    .section-sign-in-who-to-invite-header nav .logo {
+      display: flex;
+      align-items: center; }
+      .section-sign-in-who-to-invite-header nav .logo h1 {
+        display: inline-block;
+        margin: 0; }
+    .section-sign-in-who-to-invite-header nav .btn-custom-sign-in-header {
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 8rem;
+      height: 3.6rem;
+      border-radius: 4px;
+      background-color: #0093ff;
+      color: #FFF; }
+  .section-sign-in-who-to-invite-card {
+    padding: 4.9rem 4.1rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 57.5rem; }
+    .section-sign-in-who-to-invite-card h2 {
+      margin-bottom: 4.6rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000; }
+    .section-sign-in-who-to-invite-card .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e; }
+    .section-sign-in-who-to-invite-card input {
+      margin-bottom: 1.6rem;
+      outline: none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      border: 1px solid #B7B7B7; }
+      .section-sign-in-who-to-invite-card input::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba(97, 96, 97, 0.7); }
+      .section-sign-in-who-to-invite-card input:focus {
+        box-shadow: 0 0 4px 4px rgba(189, 225, 241, 0.46); }
+    .section-sign-in-who-to-invite-card .btn-custom-signin {
+      text-decoration: none;
+      margin-bottom: 3.1rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px; }
+    .section-sign-in-who-to-invite-card .img-container {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center; }
+      .section-sign-in-who-to-invite-card .img-container img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem; }
+  .section-sign-in-who-to-invite-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-who-to-invite-footer p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757; }
+    .section-sign-in-who-to-invite-footer .options {
+      margin-left: 6.4rem;
+      margin-top: 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555; }
+      .section-sign-in-who-to-invite-footer .options .active, .section-sign-in-who-to-invite-footer .options a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555; }
+
+.section-sign-in-enter-your-information {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 55.6rem; }
+  .section-sign-in-enter-your-information-header nav {
+    padding-left: 1.2rem;
+    padding-right: 2.4rem;
+    height: 6.9rem;
+    background-color: #FFF;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #f2f2f2; }
+    .section-sign-in-enter-your-information-header nav .logo {
+      display: flex;
+      align-items: center; }
+      .section-sign-in-enter-your-information-header nav .logo h1 {
+        display: inline-block;
+        margin: 0; }
+    .section-sign-in-enter-your-information-header nav .btn-custom-sign-in-header {
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 8rem;
+      height: 3.6rem;
+      border-radius: 4px;
+      background-color: #0093ff;
+      color: #FFF; }
+  .section-sign-in-enter-your-information-card {
+    padding: 4.1rem;
+    padding-top: 4.9rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 53.4rem; }
+    .section-sign-in-enter-your-information-card h2 {
+      margin-bottom: 2.1rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000; }
+    .section-sign-in-enter-your-information-card .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e; }
+    .section-sign-in-enter-your-information-card label {
+      margin-bottom: .3rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.15px;
+      text-align: left;
+      color: #000000; }
+    .section-sign-in-enter-your-information-card input {
+      margin-bottom: 2.8rem;
+      outline: none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      border: 1px solid #B7B7B7; }
+      .section-sign-in-enter-your-information-card input::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba(97, 96, 97, 0.7); }
+      .section-sign-in-enter-your-information-card input:focus {
+        box-shadow: 0 0 4px 4px rgba(189, 225, 241, 0.46); }
+    .section-sign-in-enter-your-information-card .btn-custom-signin {
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px; }
+    .section-sign-in-enter-your-information-card .img-container {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center; }
+      .section-sign-in-enter-your-information-card .img-container img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem; }
+  .section-sign-in-enter-your-information-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-enter-your-information-footer p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757; }
+    .section-sign-in-enter-your-information-footer .options {
+      margin-left: 6.4rem;
+      margin-top: 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555; }
+      .section-sign-in-enter-your-information-footer .options .active, .section-sign-in-enter-your-information-footer .options a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555; }
+
+.section-sign-in-change-password {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 45.6rem; }
+  .section-sign-in-change-password-header nav {
+    padding-left: 1.2rem;
+    padding-right: 2.4rem;
+    height: 6.9rem;
+    background-color: #FFF;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #f2f2f2; }
+    .section-sign-in-change-password-header nav .logo {
+      display: flex;
+      align-items: center; }
+      .section-sign-in-change-password-header nav .logo h1 {
+        display: inline-block;
+        margin: 0; }
+    .section-sign-in-change-password-header nav .btn-custom-sign-in-header {
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 8rem;
+      height: 3.6rem;
+      border-radius: 4px;
+      background-color: #0093ff;
+      color: #FFF; }
+  .section-sign-in-change-password-card {
+    padding: 4.1rem;
+    padding-top: 4.9rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    height: 100%; }
+    .section-sign-in-change-password-card h2 {
+      margin-bottom: 2.1rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000; }
+    .section-sign-in-change-password-card .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e; }
+    .section-sign-in-change-password-card label {
+      margin-bottom: .3rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.15px;
+      text-align: left;
+      color: #000000; }
+    .section-sign-in-change-password-card input {
+      margin-bottom: 2.8rem;
+      outline: none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      border: 1px solid #B7B7B7; }
+      .section-sign-in-change-password-card input::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba(97, 96, 97, 0.7); }
+      .section-sign-in-change-password-card input:focus {
+        box-shadow: 0 0 4px 4px rgba(189, 225, 241, 0.46); }
+    .section-sign-in-change-password-card .btn-custom-signin {
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px; }
+    .section-sign-in-change-password-card .img-container {
+      margin-bottom: 5rem;
+      width: 100%;
+      text-align: center; }
+      .section-sign-in-change-password-card .img-container img {
+        width: 33.87rem;
+        width: 33.87rem;
+        height: 22.21rem; }
+  .section-sign-in-change-password-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-change-password-footer p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757; }
+    .section-sign-in-change-password-footer .options {
+      margin-left: 6.4rem;
+      margin-top: 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555; }
+      .section-sign-in-change-password-footer .options .active, .section-sign-in-change-password-footer .options a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555; }
+
+.section-login {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 15.7rem - 2.8rem);
+  min-height: 58.2rem; }
+  .section-login-header nav {
+    padding-left: 1.2rem;
+    padding-right: 2.4rem;
+    height: 6.9rem;
+    background-color: #FFF;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #f2f2f2; }
+    .section-login-header nav .logo {
+      display: flex;
+      align-items: center; }
+      .section-login-header nav .logo h1 {
+        display: inline-block;
+        margin: 0; }
+    .section-login-header nav .btn-custom-sign-in-header {
+      font-family: "Heebo-Medium";
+      font-size: 1.55rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 8rem;
+      height: 3.6rem;
+      border-radius: 4px;
+      background-color: #0093ff;
+      color: #FFF; }
+  .section-login-card {
+    padding: 4.1rem;
+    padding-top: 4.9rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-login-card .stay {
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center; }
+      .section-login-card .stay .pretty {
+        margin-top: -.3rem; }
+      .section-login-card .stay p {
+        margin-bottom: 0;
+        font-family: "Heebo-Regular";
+        font-size: 1.45rem;
+        color: #3e3e3e; }
+      .section-login-card .stay a {
+        margin-left: auto;
+        font-family: "Heebo-Medium";
+        font-size: 1.4rem;
+        color: #0093ff; }
+    .section-login-card h2 {
+      margin-bottom: 2.1rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.6rem;
+      color: #000000; }
+    .section-login-card .sub-text {
+      margin-bottom: 2.9rem;
+      font-family: "Heebo-Regular";
+      font-size: 1.55rem;
+      color: #5e5e5e; }
+    .section-login-card label.regular {
+      margin-bottom: .3rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.5rem;
+      letter-spacing: 0.15px;
+      text-align: left;
+      color: #000000; }
+    .section-login-card input.regular {
+      margin-bottom: 2.8rem;
+      outline: none;
+      padding: 1.8rem;
+      width: 100%;
+      height: 5.2rem;
+      font-family: "Heebo-Medium";
+      font-size: 1.7rem;
+      color: #616061;
+      border-radius: 5px;
+      border: 1px solid #B7B7B7; }
+      .section-login-card input.regular::placeholder {
+        font-family: "Heebo-Regular";
+        font-size: 1.65rem;
+        color: rgba(97, 96, 97, 0.7); }
+      .section-login-card input.regular:focus {
+        box-shadow: 0 0 4px 4px rgba(189, 225, 241, 0.46); }
+    .section-login-card .btn-custom-signin {
+      margin-top: 1rem;
+      text-decoration: none;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px; }
+    .section-login-card .bottom-text {
+      margin-top: 5.1rem;
+      margin-bottom: 6rem;
+      text-align: center;
+      font-family: "Heebo-Regular";
+      font-size: 1.45rem;
+      color: #202124; }
+      .section-login-card .bottom-text a {
+        margin-left: 1.4rem;
+        font-family: "Heebo-Bold";
+        color: #0093FF; }
+  .section-login-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-login-footer p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757; }
+    .section-login-footer .options {
+      margin-left: 6.4rem;
+      margin-top: 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555; }
+      .section-login-footer .options .active, .section-login-footer .options a {
         font-family: "Heebo-Medium";
         font-size: 1.15rem;
         letter-spacing: -0.12px;
