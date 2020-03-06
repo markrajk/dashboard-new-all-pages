@@ -32,6 +32,9 @@ html {
   @media (max-width: 1500px) {
     html {
       font-size: 53%; } }
+  @media (max-width: 1400px) {
+    html {
+      font-size: 50.5%; } }
   @media (max-width: 991px) {
     html {
       font-size: 48%; } }
@@ -1889,7 +1892,7 @@ main {
     border-bottom: 1px solid #EDEDED; }
     .section-user-settings .modal-header .modal-title {
       font-family: "Heebo-Bold";
-      font-size: 1.6rem;
+      font-size: 1.75rem;
       color: #202124; }
     .section-user-settings .modal-header i {
       font-size: 2.5rem;
@@ -1900,20 +1903,20 @@ main {
       margin-top: 2.3rem;
       display: block;
       font-family: "Heebo-Bold";
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       letter-spacing: 0.26px;
       color: #202124; }
     .section-user-settings .modal-body input {
       width: 100%;
       padding: 1.1rem 1.9rem;
       font-family: "Heebo-Regular";
-      font-size: 1.3rem;
+      font-size: 1.38rem;
       height: 4.2rem;
       background-color: #F6F6F6;
       border: 1px solid #EDEDED;
       border-radius: 6px; }
       .section-user-settings .modal-body input::placeholder {
-        color: #202124;
+        color: #6e7076;
         opacity: .3; }
     .section-user-settings .modal-body .btn-custom-confirm {
       margin-top: 2.6rem;
@@ -1922,7 +1925,7 @@ main {
       padding: 1.25rem 0;
       width: 100%;
       font-family: "Heebo-Medium";
-      font-size: 1.5rem;
+      font-size: 1.55rem;
       letter-spacing: 0.16px;
       color: #FFF;
       background-color: #2F75EC;
