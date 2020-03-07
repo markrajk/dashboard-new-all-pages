@@ -242,7 +242,7 @@ header {
       border-radius: 14px;
       background-color: #fd2851; }
     header .header-links-btn, header .header-links-btn:hover {
-      margin-top: -.2rem;
+      margin-top: -.35rem;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
       text-transform: uppercase;
