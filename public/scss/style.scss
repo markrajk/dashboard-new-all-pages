@@ -435,7 +435,9 @@ header {
       // bottom: 0;
       // right: 0;
       // transform: translate(-100%, -100%);
+      margin-top: -.2rem;
       font-family: "Open Sans", sans-serif;
+      font-weight: 600;
       text-transform: uppercase;
       text-decoration: none;
       white-space: nowrap;
@@ -445,7 +447,7 @@ header {
       display: flex;
       align-items: center;
       margin-left: auto;
-      padding: .3rem 1.45rem;
+      padding: .3rem 1.2rem;
       padding: 0rem 1.4rem;
       font-size: 1.235rem;
       //font-size: 1.3rem;
