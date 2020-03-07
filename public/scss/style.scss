@@ -431,10 +431,6 @@ header {
     
     &-btn,
     &-btn:hover {
-      // position: absolute;
-      // bottom: 0;
-      // right: 0;
-      // transform: translate(-100%, -100%);
       margin-top: -.35rem;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
@@ -447,12 +443,9 @@ header {
       display: flex;
       align-items: center;
       margin-left: auto;
-      //padding: .3rem 1.2rem;
       padding: .3rem 1.25rem;
       font-size: 1.235rem;
-      //font-size: 1.3rem;
       letter-spacing: .2px;
-
       color: #fff;
       border-radius: 14.1px;
       background-color: #fd2851;
@@ -1644,10 +1637,7 @@ main {
     "card3 card2";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 34rem 28rem;
-  //min-width: 100rem !important;
   @include respond(desktop-md) {
-    //@extend: .4fr .6fr;
-    //grid-template-columns: 47.5% 52.5%;
     grid-template-columns: 45% 55%;
   }
   @include respond(desktop-sm) {
@@ -2164,6 +2154,10 @@ main {
     grid-template-rows: 57rem;
     //min-width: 100rem !important;
 
+    @include respond(desktop-xl) {
+      grid-template-rows: 53rem;
+    }
+
     @include respond(desktop-xsm) {
       grid-template-areas:
       "card1"
@@ -2546,6 +2540,10 @@ main {
 
         & .input-container {
           margin-top: 3.2rem;
+
+          @include respond(desktop-xl) {
+            margin-top: 2.8rem;;
+          }
           & label {
             display: block;
             font-family: "Heebo-Medium";
@@ -2582,6 +2580,10 @@ main {
           font-size: 1.3rem;
           color: #ffffff;
           text-align: center;
+
+          @include respond(desktop-xl) {
+            margin-top: 2.2rem;;
+          }
         }
       }
     }

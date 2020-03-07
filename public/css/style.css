@@ -1399,6 +1399,9 @@ main {
     grid-template-areas: "card1 card2";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 57rem; }
+    @media (max-width: 1500px) {
+      .section-give-feedback-main {
+        grid-template-rows: 53rem; } }
     @media (max-width: 575px) {
       .section-give-feedback-main {
         grid-template-areas: "card1" "card2";
@@ -1677,6 +1680,9 @@ main {
               opacity: 1; }
         .section-give-feedback-main .employee-body .input-container {
           margin-top: 3.2rem; }
+          @media (max-width: 1500px) {
+            .section-give-feedback-main .employee-body .input-container {
+              margin-top: 2.8rem; } }
           .section-give-feedback-main .employee-body .input-container label {
             display: block;
             font-family: "Heebo-Medium";
@@ -1706,6 +1712,9 @@ main {
           font-size: 1.3rem;
           color: #ffffff;
           text-align: center; }
+          @media (max-width: 1500px) {
+            .section-give-feedback-main .employee-body .custom-btn-feedback-red {
+              margin-top: 2.2rem; } }
   .section-give-feedback .modal-dialog {
     width: 34.5rem; }
   .section-give-feedback .modal-content {
