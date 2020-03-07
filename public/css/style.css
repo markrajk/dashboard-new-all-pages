@@ -254,8 +254,7 @@ header {
       display: flex;
       align-items: center;
       margin-left: auto;
-      padding: .3rem 1.2rem;
-      padding: 0rem 1.4rem;
+      padding: 0 1.2rem;
       font-size: 1.235rem;
       letter-spacing: .2px;
       color: #fff;
@@ -264,6 +263,7 @@ header {
       header .header-links-btn.header-links-btn-blue, header .header-links-btn:hover.header-links-btn-blue {
         background-color: #1477fc; }
       header .header-links-btn svg, header .header-links-btn:hover svg {
+        margin-bottom: -.1rem;
         width: 1.6rem;
         height: 1.6rem;
         margin-left: 0.3rem;
