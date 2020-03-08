@@ -518,6 +518,24 @@ main {
   grid-template-rows: 34rem 68rem;
   //min-width: 105rem !important;
 
+  & .card {
+    &-3 {
+      grid-area: card3;
+
+      @include respond(desktop-lg) {
+        display: none;
+      }
+    }
+
+    &-5 {
+      grid-area: card5;
+
+      @include respond(desktop-lg) {
+        display: none;
+      }
+    }
+  }
+
   
 
   @include respond(desktop-xxl) {
@@ -530,6 +548,12 @@ main {
 
   @include respond(desktop-lg) {
     grid-gap: 2rem;
+
+    grid-template-areas:
+    "card1 card2"
+    "card4 card4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 34rem 68rem;
   }
 
   @include respond(desktop-md) {
@@ -596,6 +620,20 @@ main {
   
         &:first-child {
           @include respond(desktop-lgxl) {
+            display: none !important;
+          }
+
+          @include respond(desktop-lg) {
+            display: inline-block !important;
+          }
+
+          @include respond(desktop-sm) {
+            display: none !important;
+          }
+        }
+
+        &:first-child + .bar {
+          @include respond(desktop-xsm) {
             display: none !important;
           }
         }

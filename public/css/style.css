@@ -307,6 +307,16 @@ main {
   grid-template-areas: "card1 card2 card3" "card4 card4 card5";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 34rem 68rem; }
+  .section-my-team .card-3 {
+    grid-area: card3; }
+    @media (max-width: 1199px) {
+      .section-my-team .card-3 {
+        display: none; } }
+  .section-my-team .card-5 {
+    grid-area: card5; }
+    @media (max-width: 1199px) {
+      .section-my-team .card-5 {
+        display: none; } }
   @media (max-width: 1800px) {
     .section-my-team {
       grid-gap: 2.9rem; } }
@@ -315,7 +325,10 @@ main {
       grid-gap: 2.6rem; } }
   @media (max-width: 1199px) {
     .section-my-team {
-      grid-gap: 2rem; } }
+      grid-gap: 2rem;
+      grid-template-areas: "card1 card2" "card4 card4";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 34rem 68rem; } }
   @media (max-width: 991px) {
     .section-my-team {
       grid-gap: 1.6rem; } }
@@ -364,6 +377,15 @@ main {
         background-color: rgba(193, 192, 200, 0.24); }
         @media (max-width: 1400px) {
           .section-my-team .graph-card-body .bar:first-child {
+            display: none !important; } }
+        @media (max-width: 1199px) {
+          .section-my-team .graph-card-body .bar:first-child {
+            display: inline-block !important; } }
+        @media (max-width: 767px) {
+          .section-my-team .graph-card-body .bar:first-child {
+            display: none !important; } }
+        @media (max-width: 575px) {
+          .section-my-team .graph-card-body .bar:first-child + .bar {
             display: none !important; } }
         .section-my-team .graph-card-body .bar-fill {
           position: absolute;
