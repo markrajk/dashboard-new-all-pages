@@ -672,14 +672,15 @@ main {
       }
 
       & svg {
-        width: 3.2775rem;
+        width: 3.311rem;
         height: 3.311rem;
+        
         cursor: pointer;
         .cls-1 {
           fill: #fff;
           stroke: #1477fc;
           stroke-miterlimit: 10;
-          stroke-width: .175rem;
+          stroke-width: 1.85px;
         }
   
         .cls-2 {
@@ -702,7 +703,6 @@ main {
       overflow-x: hidden;
       -ms-overflow-style: none; /* Internet Explorer 10+ */
       scrollbar-width: none; /* Firefox */
-      //border: solid 1.14px rgba($color: #EAEBEE, $alpha: .67);
       border: none;
       border: solid 1px #f5f5f5;
       border-top: none;
@@ -870,16 +870,16 @@ main {
           color: #7b7986;
   
           & span {
-            margin-top: 0.1rem;
-            margin-right: 0.1rem;
+            //margin-right: 0.1rem;
             display: inline-block;
             margin-left: 0.5rem;
             font-family: "Open Sans", sans-serif;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: roun­d(1.1rem);
+            line-height: 1.9;
             color: #fff;
-            padding: 0.3rem 1rem;
-            border-radius: 2.2rem;
+            padding: 0 1rem;
+            border-radius: 22px;
             letter-spacing: .25px;
   
             &.plus {
@@ -2275,7 +2275,7 @@ main {
           top: 50%;
           right: 0;
           transform: translate(-100%, -50%);
-          width: 3.2775rem;
+          width: 3.311rem;
           height: 3.311rem;
           cursor: pointer;
 
@@ -2283,7 +2283,7 @@ main {
             fill: #fff;
             stroke: #1477fc;
             stroke-miterlimit: 10;
-            stroke-width: .175rem;
+            stroke-width: 1.85px;
           }
     
           .cls-2 {
@@ -2298,7 +2298,7 @@ main {
             fill: none;
           }
         }
-    
+
         & .search {
           margin-top: 1.9rem;
           display: block;
@@ -3650,13 +3650,13 @@ main {
       }
 
       & svg {
-        width: 3.2775rem;
+        width: 3.311rem;
         height: 3.311rem;
         .cls-1 {
           fill: #fff;
           stroke: #1477fc;
           stroke-miterlimit: 10;
-          stroke-width: .175rem;
+          stroke-width: 1.85px;
         }
   
         .cls-2 {

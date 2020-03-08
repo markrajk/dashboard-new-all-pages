@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "HankRnd-Light";
   src: url("../fonts/Hank Rnd/EOT/HankRnd-Light.eot");
@@ -416,14 +417,14 @@ main {
         color: #88888c;
         letter-spacing: 0.24px; }
       .section-my-team .people .card-header svg {
-        width: 3.2775rem;
+        width: 3.311rem;
         height: 3.311rem;
         cursor: pointer; }
         .section-my-team .people .card-header svg .cls-1 {
           fill: #fff;
           stroke: #1477fc;
           stroke-miterlimit: 10;
-          stroke-width: .175rem; }
+          stroke-width: 1.85px; }
         .section-my-team .people .card-header svg .cls-2 {
           fill: #1477fc; }
         .section-my-team .people .card-header svg .cls-3 {
@@ -555,16 +556,15 @@ main {
           font-size: 1.3rem;
           color: #7b7986; }
           .section-my-team .overview-bottom-top p span {
-            margin-top: 0.1rem;
-            margin-right: 0.1rem;
             display: inline-block;
             margin-left: 0.5rem;
             font-family: "Open Sans", sans-serif;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: roun­d(1.1rem);
+            line-height: 1.9;
             color: #fff;
-            padding: 0.3rem 1rem;
-            border-radius: 2.2rem;
+            padding: 0 1rem;
+            border-radius: 22px;
             letter-spacing: .25px; }
             .section-my-team .overview-bottom-top p span.plus {
               background-color: #2eea4e; }
@@ -1497,14 +1497,14 @@ main {
           top: 50%;
           right: 0;
           transform: translate(-100%, -50%);
-          width: 3.2775rem;
+          width: 3.311rem;
           height: 3.311rem;
           cursor: pointer; }
           .section-give-feedback-main .people .card-header svg .cls-1 {
             fill: #fff;
             stroke: #1477fc;
             stroke-miterlimit: 10;
-            stroke-width: .175rem; }
+            stroke-width: 1.85px; }
           .section-give-feedback-main .people .card-header svg .cls-2 {
             fill: #1477fc; }
           .section-give-feedback-main .people .card-header svg .cls-3 {
@@ -2444,13 +2444,13 @@ main {
         color: #88888c;
         letter-spacing: 0.24px; }
       .section-example-team .people .card-header svg {
-        width: 3.2775rem;
+        width: 3.311rem;
         height: 3.311rem; }
         .section-example-team .people .card-header svg .cls-1 {
           fill: #fff;
           stroke: #1477fc;
           stroke-miterlimit: 10;
-          stroke-width: .175rem; }
+          stroke-width: 1.85px; }
         .section-example-team .people .card-header svg .cls-2 {
           fill: #1477fc; }
         .section-example-team .people .card-header svg .cls-3 {
