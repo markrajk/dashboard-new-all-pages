@@ -836,7 +836,6 @@ main {
       &-top {
         display: flex;
         padding: 0 1.6rem;
-        //margin: 0 0.4rem;
         padding-top: 2.4rem;
         padding-bottom: 3rem;
         border-top: solid 1.25px #f1f1f3;
@@ -845,7 +844,6 @@ main {
   
         &-second,
         &-first {
-          //margin-right: 0.5rem;
           padding-left: .53rem;
           width: 50%;
 
@@ -876,13 +874,13 @@ main {
             margin-right: 0.1rem;
             display: inline-block;
             margin-left: 0.5rem;
-            font-family: "Heebo-Bold";
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
             font-size: 1.1rem;
             color: #fff;
             padding: 0.3rem 1rem;
             border-radius: 2.2rem;
-            letter-spacing: .5px;
-            //background-color: red;
+            letter-spacing: .25px;
   
             &.plus {
               background-color: #2eea4e;
@@ -1033,7 +1031,7 @@ main {
         font-size: 1.55rem;
         letter-spacing: 0.16px;
         color: #FFF;
-        background-color: #2F75EC;
+        background-color: #1477fc;
         border: none;
         border-radius: 22px;
         text-decoration: none;
@@ -1334,6 +1332,10 @@ main {
       font-size: 1.5rem;
       font-weight: 600;
       color: #1a173b;
+
+      & a {
+        color: #1a173b;
+      }
     }
   
     & h2 {
@@ -1636,10 +1638,17 @@ main {
     "card1 card2"
     "card3 card2";
   grid-template-columns: 1fr 1fr;
+  //grid-template-rows: 34rem 28rem;
   grid-template-rows: 34rem 28rem;
-  @include respond(desktop-md) {
-    grid-template-columns: 45% 55%;
+
+  @include respond(desktop-xl) {
+    grid-template-rows: 32rem 26rem;
   }
+
+  @include respond(desktop-lg) {
+    grid-template-columns: 51% 49%;
+  }
+  
   @include respond(desktop-sm) {
     width: 80%;
     margin: 0 auto;
@@ -1656,15 +1665,6 @@ main {
   @include respond(desktop-xsm) {
     width: 100%;
   }
-
-  // .card1,
-  // .card2,
-  // .card3 {
-
-  //   @include respond(desktop-sm) {
-  //     margin: 0
-  //   }
-  // }
   
   & .card1 {
     grid-area: card1;
@@ -1714,7 +1714,7 @@ main {
   }
 
   & .graph-card {
-    height: 34rem;
+    height: 100%;
     width: 100%;
     padding-bottom: 2rem;
     border-radius: 8px;
@@ -1729,7 +1729,7 @@ main {
         margin-top: -0.1rem;
         white-space: nowrap;
         font-family: "Heebo-Bold";
-        font-size: 2.3rem;
+        font-size: 2.45rem;
         line-height: 2.8rem;
         color: #000;
       }
@@ -1839,7 +1839,7 @@ main {
         margin-top: -.2rem;
         white-space: nowrap;
         //margin-bottom: 1rem;
-        font-size: 2.4rem;
+        font-size: 2.45rem;
         font-family: "Heebo-Regular";
 
         // @include respond(desktop-md) {
@@ -1942,11 +1942,13 @@ main {
   }
 
   & .average-feedback {
+   position: relative;
     padding: 2rem;
-    padding-bottom: 3.5rem;
+    //padding-bottom: 3.5rem;
     background-color: #FFF;
     border-radius: 8px;
     border: solid 1px #f5f5f5;
+    //min-width: 46rem;
     
     &-header {
       font-family: "Heebo-Regular";
@@ -1994,9 +1996,11 @@ main {
         color: #FFF;
         text-decoration: none;
 
+
         & span {
           margin-top: .06rem;
-          font-family: "Heebo-Medium";
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
           line-height: 1;
           font-size: 1.3rem;
         }
@@ -2004,30 +2008,31 @@ main {
     }
 
     &-body {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-3rem, -50%);
       align-self: center;
-      position: relative;
       margin-left: 10vw;
 
-      @include respond(desktop-lg) {
-        margin-top: -2rem;
-        transform: scale(.8);
-        margin-left: 3rem;
-      }
-
-      @include respond(desktop-md) {
-        margin-top: -2rem;
-        transform: scale(.8);
-        margin-left: -1rem;
-      }
-
-      @include respond(desktop-sm) {
-        margin-top: 0;
-        transform: scale(1);
-        margin-left: 10vw;
-      }
       & img {
         width: 22.5rem;
         height: 22.5rem;
+
+        @include respond(desktop-lg) {
+          width: resize(22.5, .7 ) * 1rem;
+          height: resize(22.5, .7 ) * 1rem;
+        }
+
+        @include respond(desktop-md) {
+          width: resize(22.5, .9 ) * 1rem;
+          height: resize(22.5, .9 ) * 1rem;
+        }
+
+        @include respond(desktop-sm) {
+          width: resize(22.5, 1 ) * 1rem;
+          height: resize(22.5, 1 ) * 1rem;
+        }
       }
 
       &-text {
@@ -2044,28 +2049,89 @@ main {
         background-color: #FFF;
         border-radius: 50%;
 
+        @include respond(desktop-lg) {
+          width: resize(17, .7 ) * 1rem;
+          height: resize(17, .7 ) * 1rem;
+        }
+
+        @include respond(desktop-md) {
+          width: resize(17, .9 ) * 1rem;
+          height: resize(17, .9 ) * 1rem;
+        }
+
+        @include respond(desktop-sm) {
+          width: resize(17, 1 ) * 1rem;
+          height: resize(17, 1 ) * 1rem;
+        }
+
         & .top {
-          margin-top: 4rem;
+          margin-top: 3.5rem;
           font-family: "Heebo-Medium";
           font-size: 1.4rem;
           color: #000;
           letter-spacing: .25px;
+
+          @include respond(desktop-lg) {
+            margin-top: resize(3.5, .7 ) * 1rem;
+            font-size: resize(1.4, .7 ) * 1rem;
+          }
+
+          @include respond(desktop-md) {
+            margin-top: resize(3.5, .9 ) * 1rem;
+            font-size: resize(1.4, .9 ) * 1rem;
+          }
+
+          @include respond(desktop-sm) {
+            margin-top: resize(3.5, 1 ) * 1rem;
+            font-size: resize(1.4, 1 ) * 1rem;
+          }
         }
 
         & .middle {
-          //margin-top: .3rem;
+          margin-top: .3rem;
+          margin-bottom: 0;
           font-family: "HankRnd-Bold";
           font-size: 3.3rem;
           color: #000;
           letter-spacing: .25px;
+
+          @include respond(desktop-lg) {
+            font-size: resize(3.3, .7 ) * 1rem;
+            margin-top: resize(.3, .7 ) * 1rem;
+          }
+
+          @include respond(desktop-md) {
+            font-size: resize(3.3, .9 ) * 1rem;
+            margin-top: resize(.3, .9 ) * 1rem;
+          }
+
+          @include respond(desktop-sm) {
+            font-size: resize(3.3, 1 ) * 1rem;
+            margin-top: resize(.3, 1 ) * 1rem;
+          }
         }
 
         & .bottom {
-          margin-top: 2rem;
+          margin-top: 1.7rem;
           font-family: "Heebo-Medium";
           font-size: 1rem;
           color: #000;
           letter-spacing: .5px;
+
+          @include respond(desktop-lg) {
+            margin-top: resize(1.7, .7 ) * 1rem;
+            font-size: resize(1, .7 ) * 1rem;
+          }
+
+          @include respond(desktop-md) {
+            margin-top: resize(1.7, .9 ) * 1rem;
+            font-size: resize(1, .9 ) * 1rem;
+          }
+
+          @include respond(desktop-sm) {
+            margin-top: resize(1.7, 1 ) * 1rem;
+            font-size: resize(1, 1 ) * 1rem;
+          }
         }
       }
     }
@@ -2098,6 +2164,10 @@ main {
       font-size: 1.5rem;
       font-weight: 600;
       color: #1a173b;
+
+      & a {
+        color: #1a173b;
+      }
     }
   
     & h2 {
@@ -2381,16 +2451,17 @@ main {
     
         & .btn-custom  {
           text-decoration: none;
-          font-family: "Heebo-Medium";
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
           display: flex;
           justify-content: center;
           align-items: center;
           width: 8.5rem;
           height: 2.7rem;
           font-size: 1.25rem;
-          color: #009afa;
+          color: #4E4E4E;
           text-transform: capitalize;
-          border: solid 1.3px #009afa;
+          border: solid 1.3px #4E4E4E;
           border-radius: 13px;
           letter-spacing: .2px;
 
@@ -2428,7 +2499,8 @@ main {
           }
 
           &-selected {
-            background-color: #009afa;
+            border-color: #242424;
+            background-color: #242424;
             color: #fff;
           }
         }
@@ -2572,12 +2644,13 @@ main {
           margin:auto;
           margin-top: 3.8rem;
           width: 14.3rem;
-          height: 2.9rem;
+          //height: 2.9rem;
           border-radius: 34px;
-          padding: .5rem 0;
+          padding: .6rem 0;
           background-color: #fd2851;
-          font-family: "Heebo-Bold";
-          font-size: 1.3rem;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
+          font-size: 1.35rem;
           color: #ffffff;
           text-align: center;
 
@@ -2656,7 +2729,7 @@ main {
         font-size: 1.55rem;
         letter-spacing: 0.16px;
         color: #FFF;
-        background-color: #2F75EC;
+        background-color: #1477fc;
         border: none;
         border-radius: 22px;
         text-decoration: none;
@@ -2747,6 +2820,7 @@ main {
     &-header {
       padding-top: 1.85rem;
       padding-bottom: 1.95rem;
+
       & .subheader {
         opacity: 0;
         visibility: hidden;
@@ -2757,6 +2831,10 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         color: #1a173b;
+
+        & a {
+          color: #1a173b;
+        }
       }
     
       & h2 {
@@ -2922,6 +3000,10 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         color: #1a173b;
+
+        & a {
+          color: #1a173b;
+        }
       }
     
       & h2 {
@@ -3173,6 +3255,10 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         color: #1a173b;
+
+        & a {
+          color: #1a173b;
+        }
       }
     
       & h2 {
@@ -3374,6 +3460,10 @@ main {
       font-size: 1.5rem;
       font-weight: 600;
       color: #1a173b;
+
+      & a {
+        color: #1a173b;
+      }
     }
   
     & h2 {

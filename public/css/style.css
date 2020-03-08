@@ -559,12 +559,13 @@ main {
             margin-right: 0.1rem;
             display: inline-block;
             margin-left: 0.5rem;
-            font-family: "Heebo-Bold";
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
             font-size: 1.1rem;
             color: #fff;
             padding: 0.3rem 1rem;
             border-radius: 2.2rem;
-            letter-spacing: .5px; }
+            letter-spacing: .25px; }
             .section-my-team .overview-bottom-top p span.plus {
               background-color: #2eea4e; }
             .section-my-team .overview-bottom-top p span.minus {
@@ -665,7 +666,7 @@ main {
       font-size: 1.55rem;
       letter-spacing: 0.16px;
       color: #FFF;
-      background-color: #2F75EC;
+      background-color: #1477fc;
       border: none;
       border-radius: 22px;
       text-decoration: none;
@@ -857,6 +858,8 @@ main {
       font-size: 1.5rem;
       font-weight: 600;
       color: #1a173b; }
+      .section-manage-other-teams-header .subheader a {
+        color: #1a173b; }
     .section-manage-other-teams-header h2 {
       display: block;
       margin: 0;
@@ -1056,9 +1059,12 @@ main {
   grid-template-areas: "card1 card2" "card3 card2";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 34rem 28rem; }
-  @media (max-width: 991px) {
+  @media (max-width: 1500px) {
     .section-top {
-      grid-template-columns: 45% 55%; } }
+      grid-template-rows: 32rem 26rem; } }
+  @media (max-width: 1199px) {
+    .section-top {
+      grid-template-columns: 51% 49%; } }
   @media (max-width: 767px) {
     .section-top {
       width: 80%;
@@ -1102,7 +1108,7 @@ main {
     .section-top {
       grid-gap: 1.6rem; } }
   .section-top .graph-card {
-    height: 34rem;
+    height: 100%;
     width: 100%;
     padding-bottom: 2rem;
     border-radius: 8px;
@@ -1115,7 +1121,7 @@ main {
         margin-top: -0.1rem;
         white-space: nowrap;
         font-family: "Heebo-Bold";
-        font-size: 2.3rem;
+        font-size: 2.45rem;
         line-height: 2.8rem;
         color: #000; }
       .section-top .graph-card-header h4 {
@@ -1183,7 +1189,7 @@ main {
         margin-left: 0;
         margin-top: -.2rem;
         white-space: nowrap;
-        font-size: 2.4rem;
+        font-size: 2.45rem;
         font-family: "Heebo-Regular"; }
         .section-top .bottom-header .options a {
           color: #000000; }
@@ -1248,8 +1254,8 @@ main {
           font-size: 1.36rem;
           color: #2C2F34; }
   .section-top .average-feedback {
+    position: relative;
     padding: 2rem;
-    padding-bottom: 3.5rem;
     background-color: #FFF;
     border-radius: 8px;
     border: solid 1px #f5f5f5; }
@@ -1291,31 +1297,32 @@ main {
         text-decoration: none; }
         .section-top .average-feedback-header-btn span {
           margin-top: .06rem;
-          font-family: "Heebo-Medium";
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
           line-height: 1;
           font-size: 1.3rem; }
     .section-top .average-feedback-body {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(-3rem, -50%);
       align-self: center;
-      position: relative;
       margin-left: 10vw; }
-      @media (max-width: 1199px) {
-        .section-top .average-feedback-body {
-          margin-top: -2rem;
-          transform: scale(0.8);
-          margin-left: 3rem; } }
-      @media (max-width: 991px) {
-        .section-top .average-feedback-body {
-          margin-top: -2rem;
-          transform: scale(0.8);
-          margin-left: -1rem; } }
-      @media (max-width: 767px) {
-        .section-top .average-feedback-body {
-          margin-top: 0;
-          transform: scale(1);
-          margin-left: 10vw; } }
       .section-top .average-feedback-body img {
         width: 22.5rem;
         height: 22.5rem; }
+        @media (max-width: 1199px) {
+          .section-top .average-feedback-body img {
+            width: 15.75rem;
+            height: 15.75rem; } }
+        @media (max-width: 991px) {
+          .section-top .average-feedback-body img {
+            width: 20.25rem;
+            height: 20.25rem; } }
+        @media (max-width: 767px) {
+          .section-top .average-feedback-body img {
+            width: 22.5rem;
+            height: 22.5rem; } }
       .section-top .average-feedback-body-text {
         display: flex;
         flex-direction: column;
@@ -1328,23 +1335,73 @@ main {
         transform: translate(-50%, -50%);
         background-color: #FFF;
         border-radius: 50%; }
+        @media (max-width: 1199px) {
+          .section-top .average-feedback-body-text {
+            width: 11.9rem;
+            height: 11.9rem; } }
+        @media (max-width: 991px) {
+          .section-top .average-feedback-body-text {
+            width: 15.3rem;
+            height: 15.3rem; } }
+        @media (max-width: 767px) {
+          .section-top .average-feedback-body-text {
+            width: 17rem;
+            height: 17rem; } }
         .section-top .average-feedback-body-text .top {
-          margin-top: 4rem;
+          margin-top: 3.5rem;
           font-family: "Heebo-Medium";
           font-size: 1.4rem;
           color: #000;
           letter-spacing: .25px; }
+          @media (max-width: 1199px) {
+            .section-top .average-feedback-body-text .top {
+              margin-top: 2.45rem;
+              font-size: 0.98rem; } }
+          @media (max-width: 991px) {
+            .section-top .average-feedback-body-text .top {
+              margin-top: 3.15rem;
+              font-size: 1.26rem; } }
+          @media (max-width: 767px) {
+            .section-top .average-feedback-body-text .top {
+              margin-top: 3.5rem;
+              font-size: 1.4rem; } }
         .section-top .average-feedback-body-text .middle {
+          margin-top: .3rem;
+          margin-bottom: 0;
           font-family: "HankRnd-Bold";
           font-size: 3.3rem;
           color: #000;
           letter-spacing: .25px; }
+          @media (max-width: 1199px) {
+            .section-top .average-feedback-body-text .middle {
+              font-size: 2.31rem;
+              margin-top: 0.21rem; } }
+          @media (max-width: 991px) {
+            .section-top .average-feedback-body-text .middle {
+              font-size: 2.97rem;
+              margin-top: 0.27rem; } }
+          @media (max-width: 767px) {
+            .section-top .average-feedback-body-text .middle {
+              font-size: 3.3rem;
+              margin-top: 0.3rem; } }
         .section-top .average-feedback-body-text .bottom {
-          margin-top: 2rem;
+          margin-top: 1.7rem;
           font-family: "Heebo-Medium";
           font-size: 1rem;
           color: #000;
           letter-spacing: .5px; }
+          @media (max-width: 1199px) {
+            .section-top .average-feedback-body-text .bottom {
+              margin-top: 1.19rem;
+              font-size: 0.7rem; } }
+          @media (max-width: 991px) {
+            .section-top .average-feedback-body-text .bottom {
+              margin-top: 1.53rem;
+              font-size: 0.9rem; } }
+          @media (max-width: 767px) {
+            .section-top .average-feedback-body-text .bottom {
+              margin-top: 1.7rem;
+              font-size: 1rem; } }
 
 .section-give-feedback {
   padding-bottom: 1.5rem; }
@@ -1363,6 +1420,8 @@ main {
       font-size: 1.5rem;
       font-weight: 600;
       color: #1a173b; }
+      .section-give-feedback-header .subheader a {
+        color: #1a173b; }
     .section-give-feedback-header h2 {
       display: block;
       margin: 0;
@@ -1572,16 +1631,17 @@ main {
           transform: translate(-50%, -50%); }
         .section-give-feedback-main .people .list-group-item .btn-custom {
           text-decoration: none;
-          font-family: "Heebo-Medium";
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
           display: flex;
           justify-content: center;
           align-items: center;
           width: 8.5rem;
           height: 2.7rem;
           font-size: 1.25rem;
-          color: #009afa;
+          color: #4E4E4E;
           text-transform: capitalize;
-          border: solid 1.3px #009afa;
+          border: solid 1.3px #4E4E4E;
           border-radius: 13px;
           letter-spacing: .2px; }
           .section-give-feedback-main .people .list-group-item .btn-custom span {
@@ -1603,7 +1663,8 @@ main {
             .section-give-feedback-main .people .list-group-item .btn-custom svg .cls-3 {
               stroke: none; }
           .section-give-feedback-main .people .list-group-item .btn-custom-selected {
-            background-color: #009afa;
+            border-color: #242424;
+            background-color: #242424;
             color: #fff; }
     .section-give-feedback-main .employee {
       padding: 1.7rem 3.3rem;
@@ -1704,12 +1765,12 @@ main {
           margin: auto;
           margin-top: 3.8rem;
           width: 14.3rem;
-          height: 2.9rem;
           border-radius: 34px;
-          padding: .5rem 0;
+          padding: .6rem 0;
           background-color: #fd2851;
-          font-family: "Heebo-Bold";
-          font-size: 1.3rem;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
+          font-size: 1.35rem;
           color: #ffffff;
           text-align: center; }
           @media (max-width: 1500px) {
@@ -1763,7 +1824,7 @@ main {
       font-size: 1.55rem;
       letter-spacing: 0.16px;
       color: #FFF;
-      background-color: #2F75EC;
+      background-color: #1477fc;
       border: none;
       border-radius: 22px;
       text-decoration: none;
@@ -1834,6 +1895,8 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         color: #1a173b; }
+        .section-team-settings-main-header .subheader a {
+          color: #1a173b; }
       .section-team-settings-main-header h2 {
         display: block;
         margin: 0;
@@ -1945,6 +2008,8 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         color: #1a173b; }
+        .section-team-settings-member-main-header .subheader a {
+          color: #1a173b; }
       .section-team-settings-member-main-header h2 {
         display: block;
         margin: 0;
@@ -2114,6 +2179,8 @@ main {
         font-size: 1.5rem;
         font-weight: 600;
         color: #1a173b; }
+        .section-user-settings-main-header .subheader a {
+          color: #1a173b; }
       .section-user-settings-main-header h2 {
         display: block;
         margin: 0;
@@ -2248,6 +2315,8 @@ main {
       font-size: 1.5rem;
       font-weight: 600;
       color: #1a173b; }
+      .section-example-team-header .subheader a {
+        color: #1a173b; }
     .section-example-team-header h2 {
       display: block;
       margin: 0;
