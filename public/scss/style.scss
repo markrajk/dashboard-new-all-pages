@@ -3539,10 +3539,6 @@ main {
       font-size: 1.5rem;
       letter-spacing: 0.38px;
       color: #1477fc;
-
-      & i {
-        //margin-top: -.1rem;
-      }
   
       & .search {
         margin-right: .5rem;
@@ -3970,13 +3966,13 @@ main {
 //SECTION SIGN IN START
 //=============================================
 .section-sign-in-get-started {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 54rem;
 
   &-header {
-
+    margin-bottom: 2.8rem;
     & nav {
       padding-left: 1.2rem;
       padding-right: 2.4rem;
@@ -4029,12 +4025,18 @@ main {
 
     & .join-team,
     & .register-team {
+      text-decoration: none;
+      display: block;
       padding: 2.8rem;
       width: 100%;
       height: 13rem;
       border-radius: 5px;
       border: solid 1px #dddddd;
-      background-color: #f6f6f6;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #f6f6f6;
+      }
 
       & .header {
         margin-bottom: .8rem;
@@ -4061,6 +4063,8 @@ main {
             stroke-width: 2px;
           }
         }
+
+        
       }
 
       & p {
@@ -4075,13 +4079,10 @@ main {
     & .join-team {
       margin-bottom: 2.4rem;
     }
-
-    & .register-team {
-      background-color: #FFF;
-    }
   }
 
   &-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -4124,14 +4125,13 @@ main {
 //SECTION SIGN IN ENTER EMAIL  START
 //=============================================
 .section-sign-in-enter-email {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem);
-  min-height: 64.6rem;
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 62rem;
 
   &-header {
-
+    margin-bottom: 2.8rem;
     & nav {
       padding-left: 1.2rem;
       padding-right: 2.4rem;
@@ -4242,6 +4242,7 @@ main {
   }
 
   &-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -4284,14 +4285,13 @@ main {
 //SECTION SIGN IN CHECK EMAIL  START
 //=============================================
 .section-sign-in-check-email {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem);
-  min-height: 64.6rem;
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 62rem;
 
   &-header {
-
+    margin-bottom: 2.8rem;
     & nav {
       padding-left: 1.2rem;
       padding-right: 2.4rem;
@@ -4414,6 +4414,7 @@ main {
   }
 
   &-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -4456,13 +4457,13 @@ main {
 //SECTION SIGN YOU ARE INVITED  START
 //=============================================
 .section-sign-you-are-invited {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 43rem;
 
   &-header {
+    margin-bottom: 2.8rem;
 
     & nav {
       padding-left: 1.2rem;
@@ -4605,6 +4606,7 @@ main {
 
 
   &-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -4647,13 +4649,13 @@ main {
 //SECTION SIGN IN ENTER TEAM NAME  START
 //=============================================
 .section-sign-in-enter-your-team-name {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 36.6rem;
 
   &-header {
+    margin-bottom: 2.8rem;
 
     & nav {
       padding-left: 1.2rem;
@@ -4811,13 +4813,13 @@ main {
 //SECTION SIGN IN WHO TO INVITE  START
 //=============================================
 .section-sign-in-who-to-invite {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 55.6rem;
 
   &-header {
+    margin-bottom: 2.8rem;
 
     & nav {
       padding-left: 1.2rem;
@@ -4973,13 +4975,13 @@ main {
 //SECTION SIGN ENTER YOUR INFORMATION  START
 //=============================================
 .section-sign-in-enter-your-information {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 55.6rem;
 
   &-header {
+    margin-bottom: 2.8rem;
 
     & nav {
       padding-left: 1.2rem;
@@ -5323,13 +5325,14 @@ main {
 //SECTION LOGIN  START
 //=============================================
 .section-login {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  align-items: center;
+  padding: auto;
   min-height: 58.2rem;
 
   &-header {
+    margin-bottom: 2.8rem;
 
     & nav {
       padding-left: 1.2rem;
@@ -5365,19 +5368,19 @@ main {
   }
 
   &-card {
-    
     padding: 4.1rem;
     padding-top: 4.9rem;
     padding-bottom: 0;
     margin: 0 auto;
     width: 53rem;
-    //height: 47.5rem;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     border: solid 1px #dddddd;
     background-color: #ffffff;
-    //height: 100%;
-    //max-height: 43rem;
+
+    // @include respond(desktop-xsm) {
+    //   width: 80%;
+    // }
 
     & .stay {
       margin-bottom: 2.5rem;
@@ -5519,6 +5522,137 @@ main {
 //=============================================
 //SECTION SIGN CHANGE PASSWORD END
 //=============================================
+
+
+
+
+//=============================================
+//SECTION SIGN IN SUCCESS  START
+//=============================================
+.section-sign-in-success {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 62rem;
+
+  &-header {
+    margin-bottom: 2.8rem;
+    & nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2;
+
+      & .logo {
+        display: flex;
+        align-items: center;
+        & h1 {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      & .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF;
+      }
+    }
+  }
+
+  &-card {
+    padding: 5.5rem 6rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    //height: 47.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+
+    & h2 {
+      margin-bottom: .4rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.55rem;
+      color: #000000;
+    }
+
+    & .btn-custom-signin {
+      text-decoration: none;
+      margin-bottom: 4.2rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+    }
+
+    & .img-container  {
+      margin-top: 3.3rem;
+      margin-bottom: 3.3rem;
+      width: 100%;
+      text-align: center;
+      & img {
+        width: 39.57rem;
+        height: 25.67rem;
+      }
+    }
+  }
+
+  &-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+
+    & p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757;
+    }
+
+    & .options {
+      margin-left: 6.4rem;
+      margin-top:  0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555;
+
+      & .active, & a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555;
+      }
+    }
+  }
+}
+//=============================================
+//SECTION SIGN IN SUCCESS END
+//=============================================
+
 
 
 

@@ -2661,35 +2661,37 @@ main {
       color: #1a173b; }
 
 .section-sign-in-get-started {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem); }
-  .section-sign-in-get-started-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-sign-in-get-started-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-sign-in-get-started-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-sign-in-get-started-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 54rem; }
+  .section-sign-in-get-started-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-in-get-started-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-in-get-started-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-in-get-started-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-in-get-started-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-sign-in-get-started-card {
     padding: 6rem;
     margin: 0 auto;
@@ -2705,12 +2707,16 @@ main {
       font-size: 2.55rem;
       color: #000000; }
     .section-sign-in-get-started-card .join-team, .section-sign-in-get-started-card .register-team {
+      text-decoration: none;
+      display: block;
       padding: 2.8rem;
       width: 100%;
       height: 13rem;
       border-radius: 5px;
       border: solid 1px #dddddd;
-      background-color: #f6f6f6; }
+      background-color: #fff; }
+      .section-sign-in-get-started-card .join-team:hover, .section-sign-in-get-started-card .register-team:hover {
+        background-color: #f6f6f6; }
       .section-sign-in-get-started-card .join-team .header, .section-sign-in-get-started-card .register-team .header {
         margin-bottom: .8rem;
         display: flex;
@@ -2738,9 +2744,8 @@ main {
         color: #5e5e5e; }
     .section-sign-in-get-started-card .join-team {
       margin-bottom: 2.4rem; }
-    .section-sign-in-get-started-card .register-team {
-      background-color: #FFF; }
   .section-sign-in-get-started-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -2767,36 +2772,37 @@ main {
         color: #555555; }
 
 .section-sign-in-enter-email {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem);
-  min-height: 64.6rem; }
-  .section-sign-in-enter-email-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-sign-in-enter-email-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-sign-in-enter-email-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-sign-in-enter-email-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 62rem; }
+  .section-sign-in-enter-email-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-in-enter-email-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-in-enter-email-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-in-enter-email-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-in-enter-email-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-sign-in-enter-email-card {
     padding: 6rem 5.6rem;
     padding-bottom: 0;
@@ -2854,6 +2860,7 @@ main {
         width: 33.87rem;
         height: 22.21rem; }
   .section-sign-in-enter-email-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -2880,36 +2887,37 @@ main {
         color: #555555; }
 
 .section-sign-in-check-email {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem);
-  min-height: 64.6rem; }
-  .section-sign-in-check-email-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-sign-in-check-email-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-sign-in-check-email-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-sign-in-check-email-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 62rem; }
+  .section-sign-in-check-email-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-in-check-email-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-in-check-email-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-in-check-email-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-in-check-email-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-sign-in-check-email-card {
     padding: 6rem 5.6rem;
     padding-bottom: 0;
@@ -2972,6 +2980,7 @@ main {
         width: 39.4rem;
         height: 27.2rem; }
   .section-sign-in-check-email-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -2998,36 +3007,37 @@ main {
         color: #555555; }
 
 .section-sign-you-are-invited {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 43rem; }
-  .section-sign-you-are-invited-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-sign-you-are-invited-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-sign-you-are-invited-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-sign-you-are-invited-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  .section-sign-you-are-invited-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-you-are-invited-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-you-are-invited-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-you-are-invited-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-you-are-invited-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-sign-you-are-invited-card {
     padding: 4.9rem 4.1rem;
     padding-bottom: 0;
@@ -3108,6 +3118,7 @@ main {
     color: #414141;
     text-align: center; }
   .section-sign-you-are-invited-footer {
+    margin-top: 2.8rem;
     padding-left: 11.2rem;
     display: flex;
     align-items: center;
@@ -3134,36 +3145,37 @@ main {
         color: #555555; }
 
 .section-sign-in-enter-your-team-name {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 36.6rem; }
-  .section-sign-in-enter-your-team-name-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-sign-in-enter-your-team-name-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-sign-in-enter-your-team-name-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-sign-in-enter-your-team-name-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  .section-sign-in-enter-your-team-name-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-in-enter-your-team-name-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-in-enter-your-team-name-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-in-enter-your-team-name-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-in-enter-your-team-name-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-sign-in-enter-your-team-name-card {
     padding: 6rem;
     padding-bottom: 0;
@@ -3250,36 +3262,37 @@ main {
         color: #555555; }
 
 .section-sign-in-who-to-invite {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 55.6rem; }
-  .section-sign-in-who-to-invite-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-sign-in-who-to-invite-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-sign-in-who-to-invite-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-sign-in-who-to-invite-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  .section-sign-in-who-to-invite-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-in-who-to-invite-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-in-who-to-invite-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-in-who-to-invite-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-in-who-to-invite-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-sign-in-who-to-invite-card {
     padding: 4.9rem 4.1rem;
     padding-bottom: 0;
@@ -3366,36 +3379,37 @@ main {
         color: #555555; }
 
 .section-sign-in-enter-your-information {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
   min-height: 55.6rem; }
-  .section-sign-in-enter-your-information-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-sign-in-enter-your-information-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-sign-in-enter-your-information-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-sign-in-enter-your-information-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  .section-sign-in-enter-your-information-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-in-enter-your-information-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-in-enter-your-information-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-in-enter-your-information-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-in-enter-your-information-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-sign-in-enter-your-information-card {
     padding: 4.1rem;
     padding-top: 4.9rem;
@@ -3613,36 +3627,38 @@ main {
         color: #555555; }
 
 .section-login {
-  padding-top: 4rem;
   display: flex;
-  flex-direction: column;
-  height: calc(100% - 15.7rem - 2.8rem);
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  align-items: center;
+  padding: auto;
   min-height: 58.2rem; }
-  .section-login-header nav {
-    padding-left: 1.2rem;
-    padding-right: 2.4rem;
-    height: 6.9rem;
-    background-color: #FFF;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
-    border: solid 1px #f2f2f2; }
-    .section-login-header nav .logo {
-      display: flex;
-      align-items: center; }
-      .section-login-header nav .logo h1 {
-        display: inline-block;
-        margin: 0; }
-    .section-login-header nav .btn-custom-sign-in-header {
-      font-family: "Heebo-Medium";
-      font-size: 1.55rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      width: 8rem;
-      height: 3.6rem;
-      border-radius: 4px;
-      background-color: #0093ff;
-      color: #FFF; }
+  .section-login-header {
+    margin-bottom: 2.8rem; }
+    .section-login-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-login-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-login-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-login-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
   .section-login-card {
     padding: 4.1rem;
     padding-top: 4.9rem;
@@ -3748,6 +3764,99 @@ main {
       letter-spacing: -0.12px;
       color: #555555; }
       .section-login-footer .options .active, .section-login-footer .options a {
+        font-family: "Heebo-Medium";
+        font-size: 1.15rem;
+        letter-spacing: -0.12px;
+        color: #555555; }
+
+.section-sign-in-success {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 15.7rem - 2.8rem - 2.8rem);
+  min-height: 62rem; }
+  .section-sign-in-success-header {
+    margin-bottom: 2.8rem; }
+    .section-sign-in-success-header nav {
+      padding-left: 1.2rem;
+      padding-right: 2.4rem;
+      height: 6.9rem;
+      background-color: #FFF;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.09);
+      border: solid 1px #f2f2f2; }
+      .section-sign-in-success-header nav .logo {
+        display: flex;
+        align-items: center; }
+        .section-sign-in-success-header nav .logo h1 {
+          display: inline-block;
+          margin: 0; }
+      .section-sign-in-success-header nav .btn-custom-sign-in-header {
+        font-family: "Heebo-Medium";
+        font-size: 1.55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 8rem;
+        height: 3.6rem;
+        border-radius: 4px;
+        background-color: #0093ff;
+        color: #FFF; }
+  .section-sign-in-success-card {
+    padding: 5.5rem 6rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 53rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-success-card h2 {
+      margin-bottom: .4rem;
+      font-family: "Heebo-Bold";
+      font-size: 2.55rem;
+      color: #000000; }
+    .section-sign-in-success-card .btn-custom-signin {
+      text-decoration: none;
+      margin-bottom: 4.2rem;
+      display: block;
+      padding: .9rem 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.8rem;
+      color: #FFF;
+      background-color: #0093FF;
+      text-align: center;
+      border: none;
+      border-radius: 5px; }
+    .section-sign-in-success-card .img-container {
+      margin-top: 3.3rem;
+      margin-bottom: 3.3rem;
+      width: 100%;
+      text-align: center; }
+      .section-sign-in-success-card .img-container img {
+        width: 39.57rem;
+        height: 25.67rem; }
+  .section-sign-in-success-footer {
+    margin-top: 2.8rem;
+    padding-left: 11.2rem;
+    display: flex;
+    align-items: center;
+    height: 8.8rem;
+    border: solid 1px #dddddd;
+    background-color: #ffffff; }
+    .section-sign-in-success-footer p {
+      margin-bottom: 0;
+      font-family: "Heebo-Regular";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #575757; }
+    .section-sign-in-success-footer .options {
+      margin-left: 6.4rem;
+      margin-top: 0;
+      font-family: "Heebo-Medium";
+      font-size: 1.15rem;
+      letter-spacing: -0.12px;
+      color: #555555; }
+      .section-sign-in-success-footer .options .active, .section-sign-in-success-footer .options a {
         font-family: "Heebo-Medium";
         font-size: 1.15rem;
         letter-spacing: -0.12px;
